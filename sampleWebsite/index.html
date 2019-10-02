@@ -1,54 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        p.p01 {
-            color: blue;
-            padding-left: 10px
-        }
-        #p02 {
-            color: red;
-            padding-left: 10px
-        }
-        #p03 {
-            color: green;
-            padding-left: 10px
-        }
-
-        /* {*/
-        /*    color: aqua;*/
-        /*    background-color: transparent;*/
-        /*    text-decoration: none;*/
-        /*}*/
-        a:link, a:visited {
-            background-color: darkblue;
-            color: white;
-            padding: 15px 20px;
-            margin-top: 10px;
-            text-align: center;
-            text-decoration: none
-
-        }
-        /* {*/
-        /*    color: blueviolet;*/
-        /*    background-color: transparent;*/
-        /*    text-decoration: underline;*/
-
-        /*}*/
-        a:hover, a:active {
-            /*color: blue;*/
-            background-color: blue;
-            /*text-decoration: underline;*/
-
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<!--    ---------------------------------------------------Header----------------------------------------------      -->
+     <ul id="header">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+     </ul>
+<!--    ---------------------------------------------------Content---------------------------------------------      -->
+<!--    <p id="p03">This is a paragraph.</p>-->
+<!--    <p id="p02">This is a paragraph.</p>-->
+<!--    <p class="p01">I am different.</p>-->
 
-    <p id="p03">This is a paragraph.</p>
-    <p id="p02">This is a paragraph.</p>
-    <p class="p01">I am different.</p>
-    <a href="http://www.google.com/" target="_blank" title="Go to Google now">Link to google</a>
+    <ul id="content">
+        <li>
+            <a href="#london" title="London">
+                <div class="london">
+                    <h2>London</h2>
+                    <p>London is the capital of England.</p>
+                </div>
+            </a>
+        </li>
+
+        <li>
+            <a href="#paris" title="Paris">
+                <div class="paris">
+                    <h2>Paris</h2>
+                    <p>Paris is the capital of France.</p>
+                </div>
+            </a>
+        </li>
+
+        <li>
+            <a href="#tokyo" title="Tokyo">
+                <div class="tokyo">
+                    <h2>Tokyo</h2>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+            </a>
+        </li>
+    </ul>
+
+<!--    ---------------------------------------------------Button----------------------------------------------      -->
+    <div class="center">
+        <a id="gg" href="http://www.google.com/" target="_blank" title="Go to Google"> <strong>Google</strong> </a>
+        <a id="fb" href="http://www.facebook.com/" target="_blank" title="Go to Facebook"> <strong>Facebook</strong> </a>
+    </div>
 
 </body>
 </html>

@@ -1,0 +1,127 @@
+.p01 {
+    color: blue;
+    padding-left: 10px
+}
+#p02 {
+    color: red;
+    padding-left: 10px
+}
+#p03 {
+    color: green;
+    padding-left: 10px
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+.center {
+    padding: 20px;
+    /*border: 1px solid green;*/
+    text-align: center;
+    overflow: auto;
+}
+
+#gg:link, #gg:visited {
+    background-color: red;
+    color: white;
+    padding: 15px 20px;
+    margin-top: 15px;
+    margin-right: 5px;
+    text-align: center;
+    text-decoration: none
+}
+#gg:hover, #gg:active {
+    /*color: blue;*/
+    background-color: crimson;
+    /*text-decoration: underline;*/
+}
+
+#fb:link, #fb:visited {
+    background-color: blue;
+    color: white;
+    padding: 15px 20px;
+    margin-top: 15px;
+    margin-left: 5px;
+    text-align: center;
+    text-decoration: none
+}
+
+#fb:hover, #fb:active {
+    background-color: darkblue;
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+#header {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+#header li {
+    float: left;
+    width: 25%;
+}
+#header li a {
+    display: block;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    /*width: 25%;*/
+}
+#header li a:hover {
+    background-color: #111111;
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+#content {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*overflow: hidden;*/
+    /*background-color: #333333;*/
+}
+
+#content li {
+    /*float: left;*/
+    width: 100%;
+}
+#content li a {
+    display: block;
+    color: white;
+    /*font-size: 24px;*/
+    /*text-align: center;*/
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-decoration: none;
+    /*width: 25%;*/
+}
+#content li a:hover {
+    background-color: transparent;
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+.london {
+    background-image: url('images/london2.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    /*margin: 20px;*/
+    padding: 20px;
+}
+
+.paris {
+    background-image: url('images/paris2.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    /*margin: 20px;*/
+    padding: 20px;
+}
+
+.tokyo {
+    background-image: url('images/tokyo.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    /*margin: 20px;*/
+    padding: 20px;
+}
