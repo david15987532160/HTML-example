@@ -73,7 +73,7 @@
 /*--------------------------------------------------------------------------------------------------------------------*/
 #content {
     list-style-type: none;
-    margin: 0;
+    margin-top: 35px;
     padding: 0;
     /*overflow: hidden;*/
     /*background-color: #333333;*/
@@ -125,3 +125,42 @@
     /*margin: 20px;*/
     padding: 20px;
 }
+
+.halongbay {
+    background-image: url('images/halong.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    /*margin: 20px;*/
+    padding: 20px;
+}
+
+.singapore {
+    background-image: url('images/singapore.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    /*margin: 20px;*/
+    padding: 20px;
+}
+
+.sydney {
+    background-image: url('images/sydney.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    /*margin: 20px;*/
+    padding: 20px;
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+.form {
+    float: right;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    /*border: 1px solid red;*/
+}
+.form--theme-xmas { }
+.form--simple { }
+.form__input { }
+.form__submit { background-color: aqua; }
+.form__submit--disabled { }
