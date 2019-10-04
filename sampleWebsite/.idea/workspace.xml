@@ -2,46 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc4515d7-b290-48bf-aa8e-a5e61704b1ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../fonts/Andro/androgyne_tb-demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fonts/Andro/androgyne_tb-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fonts/Andro/androgyne_tb-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fonts/Andro/generator_config.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fonts/Andro/specimen_files/grid_12-825-55-15.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fonts/Andro/specimen_files/specimen_stylesheet.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fonts/Andro/stylesheet.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fonts/Androgyne-Medium/Androgyne_TB.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fonts/Androgyne-Medium/ffonts.net.htm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fonts/Androgyne-Medium/ffonts.net.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fonts/Androgyne-Medium/install-a-new-font.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fonts/Androgyne-Medium/quick_tips.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fonts/Androgyne-Medium/Γÿà  -áthebend.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fonts/Androgyne_TB/Free Fonts.URL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fonts/Androgyne_TB/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fonts/Androgyne_TB/fonts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fonts/Androgyne_TB/fonts/Androgyne_TB.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fonts/Androgyne_TB/fonts/Androgyne_TB.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fonts/Androgyne_TB/fonts/Androgyne_TB.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fonts/Androgyne_TB/fonts/Androgyne_TB.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../getbem.com" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/Androgyne-Medium/Androgyne_TB.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/Androgyne-Medium/ffonts.net.htm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/Androgyne-Medium/ffonts.net.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/Androgyne-Medium/install-a-new-font.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/Androgyne-Medium/quick_tips.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/Androgyne-Medium/Γÿà  -áthebend.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/Androgyne_TB/Free Fonts.URL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/Androgyne_TB/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/Androgyne_TB/fonts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/Androgyne_TB/fonts/Androgyne_TB.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/Androgyne_TB/fonts/Androgyne_TB.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/Androgyne_TB/fonts/Androgyne_TB.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/Androgyne_TB/fonts/Androgyne_TB.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/contact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/news.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/ava.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/phone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/smiling.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../REAME.md" beforeDir="false" afterPath="$PROJECT_DIR$/../REAME.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fonts/Andro/androgyne_tb-demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fonts/Andro/androgyne_tb-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fonts/Andro/androgyne_tb-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fonts/Andro/generator_config.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fonts/Andro/specimen_files/grid_12-825-55-15.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fonts/Andro/specimen_files/specimen_stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fonts/Andro/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../getbem.com" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,6 +52,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/css" />
+      <recent name="$PROJECT_DIR$/js" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -109,7 +94,7 @@
       <workItem from="1569924867928" duration="1352000" />
       <workItem from="1569978704016" duration="2316000" />
       <workItem from="1569981144205" duration="1481000" />
-      <workItem from="1569986949928" duration="32202000" />
+      <workItem from="1569986949928" duration="37133000" />
     </task>
     <servers />
   </component>

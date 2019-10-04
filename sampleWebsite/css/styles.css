@@ -3,8 +3,8 @@
 /*}*/
 @font-face {
     font-family: 'Andro';
-    src: url('./fonts/Androgyne_TB/fonts/Androgyne_TB.eot');
-    src: local('☺'), url('./fonts/Androgyne_TB/fonts/Androgyne_TB.woff') format('woff'), url('./fonts/Androgyne_TB/fonts/Androgyne_TB.ttf') format('truetype'), url('./fonts/Androgyne_TB/fonts/Androgyne_TB.svg') format('svg');
+    src: url('../fonts/Androgyne_TB/fonts/Androgyne_TB.eot');
+    src: local('☺'), url('../fonts/Androgyne_TB/fonts/Androgyne_TB.woff') format('woff'), url('../fonts/Androgyne_TB/fonts/Androgyne_TB.ttf') format('truetype'), url('../fonts/Androgyne_TB/fonts/Androgyne_TB.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -17,18 +17,18 @@ h1 {
     font-size: 50px;
     margin: 15px;
 }
-.p01 {
-    color: blue;
-    padding-left: 10px
-}
-#p02 {
-    color: red;
-    padding-left: 10px
-}
-#p03 {
-    color: green;
-    padding-left: 10px
-}
+/*.p01 {*/
+/*    color: blue;*/
+/*    padding-left: 10px*/
+/*}*/
+/*#p02 {*/
+/*    color: red;*/
+/*    padding-left: 10px*/
+/*}*/
+/*#p03 {*/
+/*    color: green;*/
+/*    padding-left: 10px*/
+/*}*/
 /*--------------------------------------------------------------------------------------------------------------------*/
 .input {
     display: flex;
@@ -36,6 +36,135 @@ h1 {
     margin-top: 10px;
     margin-bottom: 5px;
 }
+.form {
+    /*float: right;*/
+    /*margin-top: 5px;*/
+    /*margin-bottom: 10px;*/
+    /*border: 1px solid red;*/
+}
+.form--theme-xmas { }
+.form--simple { }
+.form__input { }
+.form__submit { }
+.form__submit--disabled { }
+/*--------------------------------------------------------------------------------------------------------------------*/
+#header {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    overflow: auto;
+    background-color: #333333;
+}
+#header li {
+    flex: 0 0 25%;
+}
+#header li a {
+    display: block;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    /*width: 25%;*/
+}
+#header li a:hover {
+    background-color: #111111;
+}
+/*.frame {*/
+/*    !*margin-top: 30px;*!*/
+/*    !*height: 100%;*!*/
+/*    width: 100%;*/
+/*    border: none;*/
+/*}*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+#content {
+    list-style-type: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    /*overflow: hidden;*/
+    /*background-color: #333333;*/
+}
+
+#content li {
+    /*float: left;*/
+    margin-bottom: 3px;
+    width: 100%;
+}
+#content li a {
+    display: block;
+    color: white;
+    /*font-size: 24px;*/
+    /*text-align: center;*/
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /*padding-left: 16px;*/
+    /*padding-right: 16px;*/
+    text-decoration: none;
+    /*width: 25%;*/
+}
+#content li a:hover {
+    background-color: transparent;
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+.london {
+    background-image: url('../images/london2.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    /*margin: 20px;*/
+    padding: 20px;
+}
+
+.paris {
+    background-image: url('../images/paris2.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    /*margin: 20px;*/
+    padding: 20px;
+}
+
+.tokyo {
+    background-image: url('../images/tokyo.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    /*margin: 20px;*/
+    padding: 20px;
+}
+
+.halongbay {
+    background-image: url('../images/halong.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    /*margin: 20px;*/
+    padding: 20px;
+}
+
+.singapore {
+    background-image: url('../images/singapore.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    /*margin: 20px;*/
+    padding: 20px;
+}
+
+.sydney {
+    background-image: url('../images/sydney.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    /*margin: 20px;*/
+    padding: 20px;
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
 .center {
     display: flex;
     justify-content: center;
@@ -46,7 +175,6 @@ h1 {
     /*overflow: auto;*/
     /*border: 1px solid red;*/
 }
-
 #gg:link, #gg:visited {
     background-color: red;
     color: white;
@@ -77,125 +205,3 @@ h1 {
 #fb:hover, #fb:active {
     background-color: darkblue;
 }
-/*--------------------------------------------------------------------------------------------------------------------*/
-#header {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-start;
-    overflow: auto;
-    background-color: #333333;
-}
-#header li {
-    flex: 0 0 25%;
-}
-#header li a {
-    display: block;
-    color: white;
-    font-size: 24px;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-    /*width: 25%;*/
-}
-#header li a:hover {
-    background-color: #111111;
-}
-/*--------------------------------------------------------------------------------------------------------------------*/
-#content {
-    list-style-type: none;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    /*overflow: hidden;*/
-    /*background-color: #333333;*/
-}
-
-#content li {
-    /*float: left;*/
-    width: 100%;
-}
-#content li a {
-    display: block;
-    color: white;
-    /*font-size: 24px;*/
-    /*text-align: center;*/
-    padding-top: 5px;
-    padding-bottom: 5px;
-    /*padding-left: 16px;*/
-    /*padding-right: 16px;*/
-    text-decoration: none;
-    /*width: 25%;*/
-}
-#content li a:hover {
-    background-color: transparent;
-}
-/*--------------------------------------------------------------------------------------------------------------------*/
-.london {
-    background-image: url('images/london2.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    color: white;
-    /*margin: 20px;*/
-    padding: 20px;
-}
-
-.paris {
-    background-image: url('images/paris2.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    color: white;
-    /*margin: 20px;*/
-    padding: 20px;
-}
-
-.tokyo {
-    background-image: url('images/tokyo.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    color: white;
-    /*margin: 20px;*/
-    padding: 20px;
-}
-
-.halongbay {
-    background-image: url('images/halong.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    color: white;
-    /*margin: 20px;*/
-    padding: 20px;
-}
-
-.singapore {
-    background-image: url('images/singapore.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    color: white;
-    /*margin: 20px;*/
-    padding: 20px;
-}
-
-.sydney {
-    background-image: url('images/sydney.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    color: white;
-    /*margin: 20px;*/
-    padding: 20px;
-}
-/*--------------------------------------------------------------------------------------------------------------------*/
-.form {
-    /*float: right;*/
-    /*margin-top: 5px;*/
-    /*margin-bottom: 10px;*/
-    /*border: 1px solid red;*/
-}
-.form--theme-xmas { }
-.form--simple { }
-.form__input { }
-.form__submit { }
-.form__submit--disabled { }
