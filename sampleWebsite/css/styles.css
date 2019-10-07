@@ -10,10 +10,10 @@
 }
 body {
     font-family: 'Andro';
-    background-color: #43B7CD;
+    background-color: #49cde3;
 }
 .header {
-    font-family: Courier;
+    font-family: Tahoma;
     color: white;
     font-size: 30px;
     padding: 80px;
@@ -22,6 +22,7 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100% 80%;
+    cursor: pointer;
 }
 .header p a:link, a:visited {
     color: #0300cd;
@@ -56,6 +57,12 @@ body {
 .form__submit { border-radius: 2px; }
 .form__submit--disabled { }
 /*--------------------------------------------------------------------------------------------------------------------*/
+img {
+    /*vertical-align: center;*/
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+}
 #navbar {
     list-style-type: none;
     margin: 0;
@@ -73,6 +80,7 @@ body {
     color: white;
     font-size: 24px;
     text-align: center;
+    margin-bottom: 0;
     padding: 16px;
     text-decoration: none;
     /*width: 25%;*/
@@ -118,6 +126,7 @@ body {
     /*padding-right: 16px;*/
     text-decoration: none;
     transition:  font-size 0.2s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #content li a:hover {
     font-size: 16.5px;
@@ -130,7 +139,6 @@ body {
     background-image: url('../images/london2.jpg');
     background-attachment: fixed;
     background-size: cover;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     color: white;
     /*margin: 20px;*/
     padding: 20px;
@@ -140,7 +148,7 @@ body {
     background-image: url('../images/paris2.jpg');
     background-attachment: fixed;
     background-size: cover;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
     color: white;
     /*margin: 20px;*/
     padding: 20px;
@@ -150,7 +158,7 @@ body {
     background-image: url('../images/tokyo.jpg');
     background-attachment: fixed;
     background-size: cover;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
     color: white;
     /*margin: 20px;*/
     padding: 20px;
@@ -160,7 +168,7 @@ body {
     background-image: url('../images/halong.jpg');
     background-attachment: fixed;
     background-size: cover;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
     color: white;
     /*margin: 20px;*/
     padding: 20px;
@@ -170,7 +178,7 @@ body {
     background-image: url('../images/singapore.jpg');
     background-attachment: fixed;
     background-size: cover;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
     color: white;
     /*margin: 20px;*/
     padding: 20px;
@@ -180,7 +188,7 @@ body {
     background-image: url('../images/sydney.jpg');
     background-attachment: fixed;
     background-size: cover;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
     color: white;
     /*margin: 20px;*/
     padding: 20px;
@@ -206,6 +214,8 @@ body {
     text-align: center;
     text-decoration: none;
     width: 80px;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #gg:hover, #gg:active {
     /*color: blue;*/
@@ -222,6 +232,8 @@ body {
     text-align: center;
     text-decoration: none;
     width: 80px;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #fb:hover, #fb:active {
