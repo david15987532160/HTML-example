@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Andro';
+  src: url('../fonts/Androgyne_TB/fonts/Androgyne_TB.eot');
+  src: local('☺'), url('../fonts/Androgyne_TB/fonts/Androgyne_TB.woff') format('woff'), url('../fonts/Androgyne_TB/fonts/Androgyne_TB.ttf') format('truetype'), url('../fonts/Androgyne_TB/fonts/Androgyne_TB.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}

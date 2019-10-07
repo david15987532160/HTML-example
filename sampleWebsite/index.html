@@ -6,86 +6,87 @@
     <title>Sample web page</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-<!--    ---------------------------------------------------Header bar------------------------------------------      -->
-     <ul id="header">
-        <li><a href="./index.html" title="Home" target="_self">Home</a></li>
-        <li><a href="./pages/news.html" title="News" target="_self">News</a></li>
-        <li><a href="./pages/contact.html" title="Contact" target="_self">Contact</a></li>
-        <li><a href="./pages/about.html" title="About me" target="_self">About</a></li>
+    <div class="header">
+        <h1>My First Website</h1>
+        <p style="font-size: 18px">A <strong>responsive</strong> website created by <a href="./pages/about.html" style="font-family: 'Andro'">me.</a> </p>
+    </div>
+
+<!--    ---------------------------------------------------Nav bar---------------------------------------------      -->
+     <ul id="navbar">
+        <li> <a href="./index.html" title="Home" target="_self">Home</a> </li>
+        <li> <a href="./pages/news.html" title="News" target="_self">News</a> </li>
+        <li> <a href="./pages/contact.html" title="Contact" target="_self">Contact</a> </li>
+        <li> <a href="./pages/about.html" title="About me" target="_self">About</a> </li>
      </ul>
 <!--    ---------------------------------------------------Content---------------------------------------------      -->
-<!--    <p id="p03">This is a paragraph.</p>-->
-<!--    <p id="p02">This is a paragraph.</p>-->
-<!--    <p class="p01">I am different.</p>-->
-
     <div class="input">
         <form class="form form--theme-xmas form--simple">
-            <input class="form__input" type="text" />
-            <input
-                    class="form__submit form__submit--disabled"
-                    type="submit"
-                    value="Search"/>
+            <input class="form__input" type="text" placeholder="Search place..."/>
+            <button class="form__submit form__submit--disabled">Search</button>
         </form>
     </div>
 <!--    ---------------------------------------------------Header----------------------------------------------      -->
-    <h1>Travel</h1>
+    <h2 id="page_name">Travel</h2>
 
-    <ul id="content">
-        <li>
-            <a href="https://en.wikipedia.org/wiki/London" title="London">
-                <div class="london">
-                    <h2>London</h2>
-                    <p>London is the capital of England.</p>
-                </div>
-            </a>
-        </li>
+    <div class="list">
+        <ul id="content">
+            <li>
+                <a href="https://en.wikipedia.org/wiki/London" title="London">
+                    <div class="london">
+                        <h2>London</h2>
+                        <p>London is the capital of England.</p>
+                    </div>
+                </a>
+            </li>
 
-        <li>
-            <a href="https://en.wikipedia.org/wiki/Paris" title="Paris">
-                <div class="paris">
-                    <h2>Paris</h2>
-                    <p>Paris is the capital of France.</p>
-                </div>
-            </a>
-        </li>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/Paris" title="Paris">
+                    <div class="paris">
+                        <h2>Paris</h2>
+                        <p>Paris is the capital of France.</p>
+                    </div>
+                </a>
+            </li>
 
-        <li>
-            <a href="https://en.wikipedia.org/wiki/Tokyo" title="Tokyo">
-                <div class="tokyo">
-                    <h2>Tokyo</h2>
-                    <p>Tokyo is the capital of Japan.</p>
-                </div>
-            </a>
-        </li>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/Tokyo" title="Tokyo">
+                    <div class="tokyo">
+                        <h2>Tokyo</h2>
+                        <p>Tokyo is the capital of Japan.</p>
+                    </div>
+                </a>
+            </li>
 
-        <li>
-            <a href="https://en.wikipedia.org/wiki/Hạ_Long_Bay" title="Ha Long Bay">
-                <div class="halongbay">
-                    <h2>Ha Long Bay</h2>
-                    <p>Ha Long Bay is a province in Viet Nam.</p>
-                </div>
-            </a>
-        </li>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/Hạ_Long_Bay" title="Ha Long Bay">
+                    <div class="halongbay">
+                        <h2>Ha Long Bay</h2>
+                        <p>Ha Long Bay is a province in Viet Nam.</p>
+                    </div>
+                </a>
+            </li>
 
-        <li>
-            <a href="https://en.wikipedia.org/wiki/Singapore" title="Singapore">
-                <div class="singapore">
-                    <h2>Singapore</h2>
-                    <p>Singapore is a city state and the city of Singapore is in the southern part of Singapore Island.</p>
-                </div>
-            </a>
-        </li>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/Singapore" title="Singapore">
+                    <div class="singapore">
+                        <h2>Singapore</h2>
+                        <p>Singapore is a city state and the city of Singapore is in the southern part of Singapore Island.</p>
+                    </div>
+                </a>
+            </li>
 
-        <li>
-            <a href="https://en.wikipedia.org/wiki/Sydney" title="Sydney">
-                <div class="sydney">
-                    <h2>Sydney</h2>
-                    <p>Sydney is the state capital of New South Wales and the most populous city in Australia and Oceania.</p>
-                </div>
-            </a>
-        </li>
-    </ul>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/Sydney" title="Sydney">
+                    <div class="sydney">
+                        <h2>Sydney</h2>
+                        <p>Sydney is the state capital of New South Wales and the most populous city in Australia and Oceania.</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
 
 <!--    ---------------------------------------------------Button----------------------------------------------      -->
     <div class="center">
@@ -93,6 +94,5 @@
         <a id="fb" href="http://www.facebook.com/" target="_blank" title="Go to Facebook"> <strong>Facebook</strong> </a>
     </div>
 
-<!--    <iframe class="frame" src="" name="tab_frame"/>-->
 </body>
 </html>
