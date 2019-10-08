@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Sample web page</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+    <script src="node_modules/@fortawesome/fontawesome-free/js/all.js" crossorigin="anonymous"></script>
+    <script src="node_modules/@fortawesome/fontawesome-free/css/all.css" crossorigin="anonymous"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 
 <body>
+<!--    ----------------------------------------------------Header---------------------------------------------      -->
     <div class="header" title="Front-end Training Page">
         <h1>My First Website</h1>
         <p style="font-size: 18px">A <strong>responsive</strong> website created by <a href="./pages/about.html" style="font-family: 'Andro'" title="See author's info">me.</a> </p>
@@ -34,9 +39,9 @@
             >Search</button>
         </form>
     </div>
-<!--    ---------------------------------------------------Header----------------------------------------------      -->
-    <h2 id="page_name">&ldquo;Travel&rdquo;</h2>
 
+    <h2 id="page_name">&ldquo;Travel&rdquo;</h2>
+<!--    ---------------------------------------------------List------------------------------------------------      -->
     <div class="list">
         <ul id="content">
             <li>
@@ -96,11 +101,16 @@
     </div>
 
 <!--    ---------------------------------------------------Button----------------------------------------------      -->
-    <div class="center">
-        <a id="gg" href="http://www.google.com/" target="_blank" title="Go to Google"> <strong>Google</strong> </a>
-        <a id="fb" href="http://www.facebook.com/" target="_blank" title="Go to Facebook"> <strong>Facebook</strong> </a>
+    <div class="buttons">
+<!--        <a id="gg" href="http://www.google.com/" target="_blank" title="Go to Google"> <strong>Google</strong> </a>-->
+<!--        <a id="fb" href="http://www.facebook.com/" target="_blank" title="Go to Facebook"> <strong>Facebook</strong> </a>-->
+        <a id="gg" class="fab fa-google" href="http://www.google.com/" target="_blank" title="Go to Google"></a>
+        <a id="fb" class="fab fa-facebook-f" href="http://www.facebook.com/" target="_blank" title="Go to Facebook"></a>
+        <a class="up_icon" onclick="scroll_Top()" title="To top page">
+            <i class="fas fa-arrow-up my__icon"></i>
+        </a>
     </div>
+<!--    ----------------------------------------------------Test-----------------------------------------------      -->
 
-    <script src="js/scripts.js"></script>
 </body>
 </html>
