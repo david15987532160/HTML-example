@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc4515d7-b290-48bf-aa8e-a5e61704b1ca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/images/company.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/mail.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/news.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +61,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.scripts.js">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/sampleWebsite/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -64,8 +70,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.scripts.js" />
         <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="Node.js.scripts.js" />
       </list>
     </recent_temporary>
   </component>
@@ -84,7 +90,8 @@
       <workItem from="1569981144205" duration="1481000" />
       <workItem from="1569986949928" duration="38772000" />
       <workItem from="1570256887441" duration="136000" />
-      <workItem from="1570412180376" duration="19562000" />
+      <workItem from="1570412180376" duration="19607000" />
+      <workItem from="1570497785109" duration="4780000" />
     </task>
     <servers />
   </component>

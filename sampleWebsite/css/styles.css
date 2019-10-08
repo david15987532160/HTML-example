@@ -53,7 +53,11 @@ body {
 }
 .form--theme-xmas { }
 .form--simple { }
-.form__input { box-shadow:1px 1px 1px darkgrey }
+.form__input {
+    box-shadow:1px 1px 1px darkgrey;
+    width: 200px;
+}
+::placeholder { color: grey; opacity: 0.6 }
 .form__submit { border-radius: 2px; }
 .form__submit--disabled { }
 /*--------------------------------------------------------------------------------------------------------------------*/
