@@ -225,7 +225,6 @@ img {
     background-color: #d90007;
     transform: translateY(3px);
 }
-
 #fb:link, #fb:visited {
 
 }
@@ -236,6 +235,24 @@ img {
 #fb:active {
     background-color: #0000a6;
     transform: translateY(3px);
+}
+.fa-google {
+    font-size: 40px;
+    padding: 10px;
+    background: #ff0007;
+    color: white;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+.fa-facebook-f {
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 15px;
+    background: #3B5998;
+    color: white;
+    border-radius: 10px;
 }
 /*--------------------------------------------------------------------------------------------------------------------*/
 .up_icon {
@@ -270,24 +287,7 @@ img {
 /*    text-decoration: none;*/
 /*    margin: 5px 2px;*/
 /*}*/
-.fa-google {
-    font-size: 40px;
-    padding: 10px;
-    background: #ff0007;
-    color: white;
-    margin-right: 5px;
-    border-radius: 10px;
-}
-.fa-facebook-f {
-    font-size: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 15px;
-    background: #3B5998;
-    color: white;
-    border-radius: 10px;
-}
+
 /*@media screen and (max-width: 700px) {*/
 /*    .row {*/
 /*        flex-direction: column;*/
