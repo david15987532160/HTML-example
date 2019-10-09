@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fc4515d7-b290-48bf-aa8e-a5e61704b1ca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,11 +29,12 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/setup-source/setup-source" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -90,7 +89,12 @@
       <workItem from="1570256887441" duration="136000" />
       <workItem from="1570412180376" duration="19607000" />
       <workItem from="1570497785109" duration="21994000" />
-      <workItem from="1570582763618" duration="1206000" />
+      <workItem from="1570582763618" duration="3903000" />
+      <workItem from="1570604459360" duration="55000" />
+      <workItem from="1570606151952" duration="257000" />
+      <workItem from="1570606737101" duration="583000" />
+      <workItem from="1570607447393" duration="69000" />
+      <workItem from="1570607625905" duration="573000" />
     </task>
     <servers />
   </component>
