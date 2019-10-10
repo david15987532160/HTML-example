@@ -2,7 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc4515d7-b290-48bf-aa8e-a5e61704b1ca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/img/img-divider.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/img/img-header-wallpaper.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/components/header/_brandheader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/components/header/_introheader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/components/header/_navheader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AXIT-webpage/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AXIT-webpage/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AXIT-webpage/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AXIT-webpage/assets/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/css/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AXIT-webpage/assets/img/img-AXIT-logo-large.png" beforeDir="false" afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/img/img-axit-logo-large.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AXIT-webpage/assets/img/img-AXIT-logo-small.png" beforeDir="false" afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/img/img-axit-logo-small.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AXIT-webpage/assets/img/img-Header.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/layout/_common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/layout/_common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/layout/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/layout/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AXIT-webpage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../AXIT-webpage/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,6 +111,8 @@
       <workItem from="1570606737101" duration="583000" />
       <workItem from="1570607447393" duration="69000" />
       <workItem from="1570607625905" duration="573000" />
+      <workItem from="1570610340806" duration="2377000" />
+      <workItem from="1570713137274" duration="1201000" />
     </task>
     <servers />
   </component>
