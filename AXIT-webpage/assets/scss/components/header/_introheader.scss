@@ -1,9 +1,15 @@
+// Introduction
+.intro-container {
+  width: 100%;
+  background-image: url('../img/img-header-wallpaper.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
 .intro__header {
+  display: flex;
+  justify-content: space-between;
   padding-top: 110px;
   padding-bottom: 140px;
-  height: 600px;
-  background-image: url('../img/img-header-wallpaper.jpg');
-
   .intro {
     width: 510px;
     color: white;
@@ -18,7 +24,6 @@
     .divider {
       padding-top: 29px;
       padding-bottom: 29px;
-      //width: 100px;
       img {
         height: 2px;
         width: 66px;
@@ -37,8 +42,7 @@
         color: white;
       }
       a:hover {
-        background: #363b41;
-        //text-decoration: underline;
+        background: #40454b;
       }
       a:active {
         transform: translateY(0.3px);
@@ -47,12 +51,12 @@
   }
 }
 
+// Register form
 .form {
   width: 360px;
   background: white;
   border-radius: 5px;
   float: right;
-
   .form__header {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -78,6 +82,7 @@
     }
     input:focus {
       outline: none;
+      border-bottom-color: #ff8b38;
     }
     ::placeholder {
       color: #c6c6c6;
@@ -96,7 +101,7 @@
     }
     a:hover {
       background: #FFAB6A;
-      //text-decoration: underline;
+      border-radius: 0px 0px 5px 5px;
     }
     a:active {
       transform: translateY(0.3px);
