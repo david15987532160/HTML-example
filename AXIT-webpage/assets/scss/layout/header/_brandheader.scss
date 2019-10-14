@@ -5,14 +5,21 @@
   box-shadow: 0 1px 3px grey;
 }
 .brand {
+  font-family: 'Open Sans', sans-serif;
   display: flex;
   justify-content: space-between;
   padding-top: 25px;
   padding-bottom: 25px;
-  margin: auto;
   .text__brand {
     display: block;
     width: 445px;
+    .title {
+      opacity: 1;
+    }
+    p {
+      padding-top: 10px;
+      opacity: 0.7;
+    }
   }
 
   // Icon list
@@ -41,9 +48,6 @@
       i:hover {
         color: #d7d7d7  ;
         cursor: pointer;
-      }
-      .fa-wifi {
-        transform: rotate(45deg);
       }
     }
   }

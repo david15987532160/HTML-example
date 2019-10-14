@@ -24,20 +24,22 @@
   background-size: cover;
 }
 .intro__header {
+  font-family: 'Open Sans', sans-serif;
   display: flex;
   justify-content: space-between;
   padding-top: 110px;
   padding-bottom: 140px;
   .intro {
+    font-family: 'Raleway', sans-serif;
     width: 510px;
     color: white;
-    float: left;
     .logo-large {
       padding-bottom: 35px;
       background-size: cover;
+      animation: appear 2.5s ease-in;
     }
     h1 {
-      font-size: 32px;
+      font-size: 33px;
       animation: fadeInLeft 1s ease;
     }
     .divider {
@@ -52,17 +54,18 @@
     p {
       animation: fadeInLeft 1.5s ease-out;
       opacity: 0.7;
-
+      padding-bottom: 40px;
     }
     .btn-download {
       width: 135px;
-      margin-top: 40px;
       border: 2px solid white;
       text-align: center;
       animation: appear 2s ease-out;
       a {
         display:block;
         color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
       }
       a:hover {
         background: #40454b;
@@ -77,15 +80,16 @@
 // Register form
 .form {
   width: 360px;
+  display: flex;
+  flex-direction: column;
   background: white;
-  float: right;
   border-radius: 5px;
   animation: fadeInRight 1.5s ease-out;
   .form__header {
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: center;
-    font-size: 17px;
+    font-size: 18px;
     background: #f5f5f5;
     border-radius: 5px 5px 0 0;
     span {
@@ -93,8 +97,7 @@
     }
   }
   .form__input {
-    padding-top: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
     padding-left: 40px;
     padding-right: 40px;
     display: flex;
@@ -102,7 +105,7 @@
     border-radius: 0 0 0 0;
     input {
       flex: 0 0 33%;
-      padding-top: 45px;
+      padding-top: 52px;
       border: none;
       border-bottom: 1px solid #d6d6d6;
     }

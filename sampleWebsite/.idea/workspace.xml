@@ -2,13 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc4515d7-b290-48bf-aa8e-a5e61704b1ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/img/img-body-city.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/img/img-body-city-left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/img/img-body-city-right-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/img/img-circle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/layout/body/_contact.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/layout/body/_download.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/layout/body/_extraintro.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/layout/body/_feedback.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/layout/body/_listbody.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/layout/body/_pricing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/layout/body/_spicbody.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/layout/footer/_footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AXIT-webpage/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AXIT-webpage/assets/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/css/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/components/body/_tabbody.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/components/body/_tabbody.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/components/header/_brandheader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/components/header/_brandheader.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/components/header/_introheader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/components/header/_introheader.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/components/header/_navheader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/components/header/_navheader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AXIT-webpage/assets/img/img-body-city.png" beforeDir="false" afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/img/img-body-city-right.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AXIT-webpage/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/components/body/_tabbody.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/layout/body/_tabbody.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/components/header/_brandheader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/layout/header/_brandheader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/components/header/_introheader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/layout/header/_introheader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/components/header/_navheader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/layout/header/_navheader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/layout/_body.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/layout/_body.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/layout/_common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/layout/_common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/layout/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/layout/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/layout/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../AXIT-webpage/assets/scss/layout/_header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AXIT-webpage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../AXIT-webpage/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -106,7 +122,7 @@
       <workItem from="1570610340806" duration="2377000" />
       <workItem from="1570713137274" duration="3046000" />
       <workItem from="1570892865167" duration="613000" />
-      <workItem from="1570976921000" duration="599000" />
+      <workItem from="1570976921000" duration="1200000" />
     </task>
     <servers />
   </component>

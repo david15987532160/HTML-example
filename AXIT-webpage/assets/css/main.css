@@ -7256,14 +7256,14 @@ img {
 
 .wrapper {
   width: 1110px;
-  padding-left: 150px;
-  padding-right: 150px;
   margin: auto;
 }
 
 .nav-container {
   width: 100%;
   background: #333333;
+  position: sticky;
+  top: 0;
 }
 
 .nav__head {
@@ -7279,6 +7279,7 @@ img {
 .nav__head .menu__nav__head {
   display: flex;
   overflow: auto;
+  font-family: "Open Sans", sans-serif;
 }
 .nav__head .menu__nav__head a {
   display: block;
@@ -7343,22 +7344,24 @@ img {
 }
 
 .intro__header {
+  font-family: "Open Sans", sans-serif;
   display: flex;
   justify-content: space-between;
   padding-top: 110px;
   padding-bottom: 140px;
 }
 .intro__header .intro {
+  font-family: "Raleway", sans-serif;
   width: 510px;
   color: white;
-  float: left;
 }
 .intro__header .intro .logo-large {
   padding-bottom: 35px;
   background-size: cover;
+  animation: appear 2.5s ease-in;
 }
 .intro__header .intro h1 {
-  font-size: 32px;
+  font-size: 33px;
   animation: fadeInLeft 1s ease;
 }
 .intro__header .intro .divider {
@@ -7373,10 +7376,10 @@ img {
 .intro__header .intro p {
   animation: fadeInLeft 1.5s ease-out;
   opacity: 0.7;
+  padding-bottom: 40px;
 }
 .intro__header .intro .btn-download {
   width: 135px;
-  margin-top: 40px;
   border: 2px solid white;
   text-align: center;
   animation: appear 2s ease-out;
@@ -7384,6 +7387,8 @@ img {
 .intro__header .intro .btn-download a {
   display: block;
   color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .intro__header .intro .btn-download a:hover {
   background: #40454b;
@@ -7394,8 +7399,9 @@ img {
 
 .form {
   width: 360px;
+  display: flex;
+  flex-direction: column;
   background: white;
-  float: right;
   border-radius: 5px;
   animation: fadeInRight 1.5s ease-out;
 }
@@ -7403,7 +7409,7 @@ img {
   padding-top: 15px;
   padding-bottom: 15px;
   text-align: center;
-  font-size: 17px;
+  font-size: 18px;
   background: #f5f5f5;
   border-radius: 5px 5px 0 0;
 }
@@ -7411,8 +7417,7 @@ img {
   color: #ff8b38;
 }
 .form .form__input {
-  padding-top: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 70px;
   padding-left: 40px;
   padding-right: 40px;
   display: flex;
@@ -7421,7 +7426,7 @@ img {
 }
 .form .form__input input {
   flex: 0 0 33%;
-  padding-top: 45px;
+  padding-top: 52px;
   border: none;
   border-bottom: 1px solid #d6d6d6;
 }
@@ -7458,15 +7463,22 @@ img {
 }
 
 .brand {
+  font-family: "Open Sans", sans-serif;
   display: flex;
   justify-content: space-between;
   padding-top: 25px;
   padding-bottom: 25px;
-  margin: auto;
 }
 .brand .text__brand {
   display: block;
   width: 445px;
+}
+.brand .text__brand .title {
+  opacity: 1;
+}
+.brand .text__brand p {
+  padding-top: 10px;
+  opacity: 0.7;
 }
 .brand .icon__container {
   display: flex;
@@ -7494,18 +7506,18 @@ img {
   color: #d7d7d7;
   cursor: pointer;
 }
-.brand .icon__list a .fa-wifi {
-  transform: rotate(45deg);
-}
 
 .tab-container {
   width: 100%;
+  background: #f5f5f5;
+  margin-top: 2px;
 }
 
 .tab {
+  font-family: "Open Sans", sans-serif;
   display: flex;
   justify-content: space-between;
-  padding-top: 150px;
+  padding-top: 148px;
   padding-bottom: 120px;
 }
 .tab .tab__select .tab__list {
@@ -7515,6 +7527,8 @@ img {
 .tab .tab__select .tab__list div {
   background: #333333;
   color: white;
+  border: 0.5px solid white;
+  font-size: 20px;
   text-align: center;
   padding-top: 46px;
   padding-bottom: 46px;
@@ -7522,20 +7536,22 @@ img {
   padding-right: 35px;
 }
 .tab .tab__select .tab__list div:hover {
-  background: #3c3c3c;
+  background: #ff8b38;
 }
 .tab .tab__select .tab__list div:active {
-  background: #ff8b38;
+  background: #FFAB6A;
 }
 .tab .tab__text {
   display: block;
   width: 550px;
 }
+.tab .tab__text .title {
+  opacity: 1;
+}
 .tab .tab__text strong {
-  font-size: 20px;
+  font-size: 26px;
 }
 .tab .tab__text p {
-  padding-top: 54px;
   padding-bottom: 53px;
   opacity: 0.7;
 }
@@ -7543,13 +7559,16 @@ img {
   width: 120px;
   background: #ff8b38;
   text-align: center;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 .tab .tab__text .btn-download-2 a {
   display: block;
   color: white;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+.tab .tab__text .btn-download-2 a strong {
+  font-size: 16px;
 }
 .tab .tab__text .btn-download-2 a:hover {
   background: #FFAB6A;
@@ -7559,6 +7578,93 @@ img {
 }
 .tab .tab__img img {
   padding-top: 25px;
+}
+
+.list-container {
+  width: 100%;
+}
+
+.list {
+  font-family: "Open Sans", "sans-serif";
+  padding-top: 105px;
+  padding-bottom: 135px;
+}
+.list .list__pic {
+  float: left;
+  margin-top: 20px;
+  margin-right: 150px;
+  box-shadow: 0 33px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.list .list__text {
+  display: flex;
+  flex-direction: column;
+  padding-right: 18px;
+}
+.list .list__text .title {
+  opacity: 1;
+}
+.list .list__text .divider {
+  height: 3px;
+  width: 65px;
+  margin-top: 27px;
+  margin-bottom: 30px;
+  background: #ff8b38;
+}
+.list .list__text p {
+  opacity: 0.7;
+}
+.list .list__text .list__list .list__listitem {
+  padding-top: 50px;
+}
+.list .list__text .list__list .list__listitem .listitem__icon {
+  float: left;
+}
+.list .list__text .list__list .list__listitem .listitem__icon i {
+  width: 40px;
+  height: 40px;
+  padding-top: 9px;
+  padding-left: 8px;
+  border: 2px solid #ff8b38;
+  border-radius: 50px;
+  margin-right: 30px;
+  color: #ff8b38;
+}
+.list .list__text .list__list .list__listitem .listitem__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.spic-container {
+  width: 100%;
+  background: #f5f5f5;
+}
+
+.spic {
+  font-family: "Open Sans", "sans-serif";
+  display: flex;
+  padding-top: 90px;
+  padding-bottom: 130px;
+}
+.spic .spic__text {
+  float: left;
+  width: 50%;
+  margin-right: 102px;
+}
+.spic .spic__text .title {
+  opacity: 1;
+}
+.spic .spic__text .divider {
+  height: 3px;
+  width: 65px;
+  margin-top: 27px;
+  margin-bottom: 30px;
+  background: #ff8b38;
+}
+.spic .spic__text p {
+  opacity: 0.7;
+}
+.spic .spic__pic {
+  box-shadow: 0 33px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*# sourceMappingURL=main.css.map */

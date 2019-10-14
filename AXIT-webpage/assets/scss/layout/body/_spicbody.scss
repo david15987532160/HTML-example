@@ -1,0 +1,31 @@
+.spic-container {
+  width: 100%;
+  background: #f5f5f5;
+}
+.spic {
+  font-family: 'Open Sans', 'sans-serif';
+  display: flex;
+  padding-top: 90px;
+  padding-bottom: 130px;
+  .spic__text {
+    float: left;
+    width: 50%;
+    margin-right: 102px;
+    .title {
+      opacity: 1;
+    }
+    .divider {
+      height: 3px;
+      width: 65px;
+      margin-top: 27px;
+      margin-bottom: 30px;
+      background: #ff8b38;
+    }
+    p {
+      opacity: 0.7;
+    }
+  }
+  .spic__pic {
+    box-shadow: 0 33px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+  }
+}
