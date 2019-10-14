@@ -1,3 +1,21 @@
+// Animation
+@keyframes appear {
+  0% { opacity: 0; }
+  25% { opacity: 0; }
+  50% { opacity: 0; }
+  75% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translate3d(-100%, 0, 0); }
+  to { opacity: 1; transform: translate3d(0, 0, 0);}
+}
+@keyframes fadeInRight {
+  0% { opacity: 0; transform: translate3d(100%, 0, 0); }
+  //25% { opacity: 0; transform: translate3d(100%, 0, 0); }
+  //50% { opacity: 0.5; transform: translate3d(50%, 0, 0); }
+  100% { opacity: 1; transform: translate3d(0, 0, 0); }
+}
 // Introduction
 .intro-container {
   width: 100%;
@@ -20,23 +38,28 @@
     }
     h1 {
       font-size: 32px;
+      animation: fadeInLeft 1s ease;
     }
     .divider {
       padding-top: 29px;
       padding-bottom: 29px;
+      animation: fadeInLeft 1s ease-out;
       img {
         height: 2px;
         width: 66px;
       }
     }
     p {
-      opacity: 0.8;
+      animation: fadeInLeft 1.5s ease-out;
+      opacity: 0.7;
+
     }
     .btn-download {
       width: 135px;
       margin-top: 40px;
       border: 2px solid white;
       text-align: center;
+      animation: appear 2s ease-out;
       a {
         display:block;
         color: white;
@@ -55,14 +78,16 @@
 .form {
   width: 360px;
   background: white;
-  border-radius: 5px;
   float: right;
+  border-radius: 5px;
+  animation: fadeInRight 1.5s ease-out;
   .form__header {
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: center;
     font-size: 17px;
     background: #f5f5f5;
+    border-radius: 5px 5px 0 0;
     span {
       color: #ff8b38;
     }
@@ -74,6 +99,7 @@
     padding-right: 40px;
     display: flex;
     flex-direction: column;
+    border-radius: 0 0 0 0;
     input {
       flex: 0 0 33%;
       padding-top: 45px;

@@ -1,14 +1,15 @@
 // Social Media Link
 .brand-container {
   width: 100%;
-  //border: 1px solid black;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  //box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 1px 3px grey;
 }
 .brand {
   display: flex;
   justify-content: space-between;
   padding-top: 25px;
   padding-bottom: 25px;
+  margin: auto;
   .text__brand {
     display: block;
     width: 445px;
@@ -34,7 +35,7 @@
         margin-left: 29px;
         margin-right: 29px;
         text-align: center;
-        font-size: 35px;
+        font-size: 39px;
         color: #cccccc;
       }
       i:hover {

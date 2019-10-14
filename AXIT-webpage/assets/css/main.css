@@ -7264,8 +7264,6 @@ img {
 .nav-container {
   width: 100%;
   background: #333333;
-  position: sticky;
-  top: 0;
 }
 
 .nav__head {
@@ -7300,6 +7298,43 @@ img {
   color: #c6c6c6;
 }
 
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
 .intro-container {
   width: 100%;
   background-image: url("../img/img-header-wallpaper.jpg");
@@ -7324,23 +7359,27 @@ img {
 }
 .intro__header .intro h1 {
   font-size: 32px;
+  animation: fadeInLeft 1s ease;
 }
 .intro__header .intro .divider {
   padding-top: 29px;
   padding-bottom: 29px;
+  animation: fadeInLeft 1s ease-out;
 }
 .intro__header .intro .divider img {
   height: 2px;
   width: 66px;
 }
 .intro__header .intro p {
-  opacity: 0.8;
+  animation: fadeInLeft 1.5s ease-out;
+  opacity: 0.7;
 }
 .intro__header .intro .btn-download {
   width: 135px;
   margin-top: 40px;
   border: 2px solid white;
   text-align: center;
+  animation: appear 2s ease-out;
 }
 .intro__header .intro .btn-download a {
   display: block;
@@ -7356,8 +7395,9 @@ img {
 .form {
   width: 360px;
   background: white;
-  border-radius: 5px;
   float: right;
+  border-radius: 5px;
+  animation: fadeInRight 1.5s ease-out;
 }
 .form .form__header {
   padding-top: 15px;
@@ -7365,6 +7405,7 @@ img {
   text-align: center;
   font-size: 17px;
   background: #f5f5f5;
+  border-radius: 5px 5px 0 0;
 }
 .form .form__header span {
   color: #ff8b38;
@@ -7376,6 +7417,7 @@ img {
   padding-right: 40px;
   display: flex;
   flex-direction: column;
+  border-radius: 0 0 0 0;
 }
 .form .form__input input {
   flex: 0 0 33%;
@@ -7412,7 +7454,7 @@ img {
 
 .brand-container {
   width: 100%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 1px 3px grey;
 }
 
 .brand {
@@ -7420,6 +7462,7 @@ img {
   justify-content: space-between;
   padding-top: 25px;
   padding-bottom: 25px;
+  margin: auto;
 }
 .brand .text__brand {
   display: block;
@@ -7444,7 +7487,7 @@ img {
   margin-left: 29px;
   margin-right: 29px;
   text-align: center;
-  font-size: 35px;
+  font-size: 39px;
   color: #cccccc;
 }
 .brand .icon__list a i:hover {
@@ -7457,8 +7500,65 @@ img {
 
 .tab-container {
   width: 100%;
-  height: 200px;
-  background: #1c7430;
+}
+
+.tab {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 150px;
+  padding-bottom: 120px;
+}
+.tab .tab__select .tab__list {
+  display: flex;
+  flex-direction: column;
+}
+.tab .tab__select .tab__list div {
+  background: #333333;
+  color: white;
+  text-align: center;
+  padding-top: 46px;
+  padding-bottom: 46px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.tab .tab__select .tab__list div:hover {
+  background: #3c3c3c;
+}
+.tab .tab__select .tab__list div:active {
+  background: #ff8b38;
+}
+.tab .tab__text {
+  display: block;
+  width: 550px;
+}
+.tab .tab__text strong {
+  font-size: 20px;
+}
+.tab .tab__text p {
+  padding-top: 54px;
+  padding-bottom: 53px;
+  opacity: 0.7;
+}
+.tab .tab__text .btn-download-2 {
+  width: 120px;
+  background: #ff8b38;
+  text-align: center;
+  border-radius: 2px;
+}
+.tab .tab__text .btn-download-2 a {
+  display: block;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.tab .tab__text .btn-download-2 a:hover {
+  background: #FFAB6A;
+}
+.tab .tab__text .btn-download-2 a:active {
+  transform: translateY(0.3px);
+}
+.tab .tab__img img {
+  padding-top: 25px;
 }
 
 /*# sourceMappingURL=main.css.map */
