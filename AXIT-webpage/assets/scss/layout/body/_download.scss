@@ -1,0 +1,46 @@
+.download-container {
+  width: 100%;
+  background: url("../img/img-download-wallpaper.jpg");
+  background-size: cover;
+}
+.download {
+  font-family: 'Open Sans', 'sans-serif';
+  padding-top: 75px;
+  padding-bottom: 63px;
+  color: white;
+  text-align: center;
+  .title {
+    font-family: 'Raleway', 'sans-serif';
+  }
+  .divider {
+    width: 67px;
+    height: 3px;
+    margin-top: 27px;
+    margin-bottom: 30px;
+    margin-left: 520px;
+    background: white;
+  }
+  p {
+    opacity: 0.7;
+    padding-bottom: 36px;
+  }
+  .btn-download {
+    width: 135px;
+    margin: auto;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 1px;
+    a {
+      display: block;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      color: white;
+    }
+    a:hover {
+      background: #40454b;
+    }
+    a:active {
+      transform: translateY(0.3px);
+    }
+  }
+}

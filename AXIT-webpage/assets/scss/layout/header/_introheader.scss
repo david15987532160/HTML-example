@@ -20,6 +20,7 @@
   from {  }
   to { transform: translateX(1%) }
 }
+
 // Introduction
 .intro-container {
   width: 100%;
@@ -37,7 +38,6 @@
   padding-top: 110px;
   padding-bottom: 140px;
   .intro {
-    font-family: 'Raleway', sans-serif;
     width: 510px;
     color: white;
     .logo-large {
@@ -46,6 +46,7 @@
       animation: appear 2.5s ease-in;
     }
     h1 {
+      font-family: 'Raleway', sans-serif;
       font-size: 33px;
       animation: fadeInLeft 1s ease;
     }
@@ -59,20 +60,22 @@
       }
     }
     p {
+      font-family: 'Raleway', sans-serif;
       animation: fadeInLeft 1.5s ease-out;
       opacity: 0.7;
       padding-bottom: 40px;
     }
     .btn-download {
       width: 135px;
-      border: 2px solid white;
       text-align: center;
+      border: 3px solid white;
+      border-radius: 1px;
       animation: appear 2s ease-out;
       a {
         display:block;
-        color: white;
         padding-top: 10px;
         padding-bottom: 10px;
+        color: white;
       }
       a:hover {
         background: #40454b;
@@ -103,6 +106,7 @@
       color: #ff8b38;
     }
   }
+
   .form__input {
     padding-bottom: 70px;
     padding-left: 40px;
@@ -125,13 +129,14 @@
       padding-left: 14px;
     }
   }
+
   .form__btn {
     background: #ffa35e;
     text-align: center;
     border-radius: 0px 0px 5px 5px;
     a {
-      padding-top: 15.5px;
-      padding-bottom: 15.5px;
+      padding-top: 16.5px;
+      padding-bottom: 16.5px;
       display: block;
       color: white;
     }

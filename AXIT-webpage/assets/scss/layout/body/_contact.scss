@@ -1,0 +1,61 @@
+.contact-container {
+  width: 100%;
+}
+.contact {
+  font-family: 'Raleway', 'sans-serif';
+  padding-top: 110px;
+  padding-bottom: 80px;
+  .contact__text {
+    text-align: center;
+    padding-bottom: 90px;
+    .title {
+      font-family: 'Open Sans', 'sans-serif';
+      opacity: 1;
+    }
+    .divider {
+      width: 67px;
+      height: 3px;
+      margin-top: 27px;
+      margin-bottom: 30px;
+      margin-left: 520px;
+      background: #ff8b38;
+    }
+    p {
+      opacity: 0.7;
+    }
+  }
+  .contact__input {
+    padding-bottom: 43px;
+    .input__info {
+      display: flex;
+      justify-content: space-between;
+      .input__list {
+        display: flex;
+        flex-direction: column;
+      }
+      .input__message {
+
+      }
+    }
+
+  }
+  .btn-download {
+    width: 148px;
+    margin: auto;
+    text-align: center;
+    background: #ff9b51;
+    border-radius: 4px;
+    a {
+      display: block;
+      color: white;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    a:hover {
+
+    }
+    a:active {
+
+    }
+  }
+}
