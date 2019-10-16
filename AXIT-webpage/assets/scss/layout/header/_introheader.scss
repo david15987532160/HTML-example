@@ -1,16 +1,16 @@
 // Animation
-@keyframes appear {
+@keyframes fadeIn {
   0% { opacity: 0; }
   25% { opacity: 0; }
   50% { opacity: 0; }
   75% { opacity: 0; }
   100% { opacity: 1; }
 }
-@keyframes fadeInLeft {
+@keyframes slideInLeft {
   from { opacity: 0; transform: translate3d(-100%, 0, 0); }
   to { opacity: 1; transform: translate3d(0, 0, 0);}
 }
-@keyframes fadeInRight {
+@keyframes slideInRight {
   0% { opacity: 0; transform: translate3d(100%, 0, 0); }
   //25% { opacity: 0; transform: translate3d(100%, 0, 0); }
   //50% { opacity: 0.5; transform: translate3d(50%, 0, 0); }
@@ -43,17 +43,17 @@
     .logo-large {
       padding-bottom: 35px;
       background-size: cover;
-      animation: appear 2.5s ease-in;
+      animation: fadeIn 2.5s ease-in;
     }
     h1 {
       font-family: 'Raleway', sans-serif;
       font-size: 33px;
-      animation: fadeInLeft 1s ease;
+      animation: slideInLeft 1s ease;
     }
     .divider {
       padding-top: 29px;
       padding-bottom: 29px;
-      animation: fadeInLeft 1s ease-out;
+      animation: slideInLeft 1s ease-out;
       img {
         height: 2px;
         width: 66px;
@@ -61,7 +61,7 @@
     }
     p {
       font-family: 'Raleway', sans-serif;
-      animation: fadeInLeft 1.5s ease-out;
+      animation: slideInLeft 1.5s ease-out;
       opacity: 0.7;
       padding-bottom: 40px;
     }
@@ -70,7 +70,7 @@
       text-align: center;
       border: 3px solid white;
       border-radius: 1px;
-      animation: appear 2s ease-out;
+      animation: fadeIn 2s ease-out;
       a {
         display:block;
         padding-top: 10px;
@@ -94,7 +94,7 @@
   flex-direction: column;
   background: white;
   border-radius: 5px;
-  animation: fadeInRight 1.5s ease-out;
+  animation: slideInRight 1.5s ease-out;
   .form__header {
     padding-top: 15px;
     padding-bottom: 15px;

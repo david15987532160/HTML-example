@@ -1,3 +1,21 @@
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  25% { opacity: 0; }
+  50% { opacity: 0; }
+  75% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes slideInTop {
+  from { opacity: 0; transform: translate3d(0, 100%, 0); }
+  to { opacity: 1; transform: translate3d(0, 0, 0);}
+}
+@keyframes slideInBottom {
+  0% { opacity: 0; transform: translate3d(0, -100%, 0); }
+  //25% { opacity: 0; transform: translate3d(100%, 0, 0); }
+  //50% { opacity: 0.5; transform: translate3d(50%, 0, 0); }
+  100% { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
 .download-container {
   width: 100%;
   background: url("../img/img-download-wallpaper.jpg");
@@ -11,6 +29,7 @@
   text-align: center;
   .title {
     font-family: 'Raleway', 'sans-serif';
+    animation: slideInTop 3s ease;
   }
   .divider {
     width: 67px;
@@ -23,6 +42,7 @@
   p {
     opacity: 0.7;
     padding-bottom: 36px;
+    animation: slideInBottom 3s ease;
   }
   .btn-download {
     width: 135px;
@@ -42,5 +62,6 @@
     a:active {
       transform: translateY(0.3px);
     }
+    animation: fadeIn 4s linear;
   }
 }

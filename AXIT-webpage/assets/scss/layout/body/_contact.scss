@@ -1,3 +1,14 @@
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translate3d(-100%, 0, 0); }
+  to { opacity: 1; transform: translate3d(0, 0, 0);}
+}
+@keyframes slideInRight {
+  0% { opacity: 0; transform: translate3d(100%, 0, 0); }
+  //25% { opacity: 0; transform: translate3d(100%, 0, 0); }
+  //50% { opacity: 0.5; transform: translate3d(50%, 0, 0); }
+  100% { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
 .contact-container {
   width: 100%;
 }
@@ -50,6 +61,7 @@
           padding-left: 10px;
           color: #c6c6c6;
         }
+        animation: slideInLeft 4.5s ease-out;
       }
       .input__message {
         width: 40%;
@@ -68,6 +80,7 @@
           padding-left: 10px;
           color: #c6c6c6;
         }
+        animation: slideInRight 4.5s ease-out;
       }
     }
 

@@ -1,13 +1,75 @@
+var name, text;
 function openTab(evt, tab_id) {
-    var i, tabcontent, tablinks;
+    var i, id, tabcontent, tablinks;
+    id = document.getElementById(tab_id);
     tabcontent = document.getElementsByClassName("text__content");
-    for (i = 0; i < text__content.length; i++) {
-        text__content[i].style.display = "none";
-    }
     tablinks = document.getElementsByClassName("listitem__tablink");
-    for (i = 0; i < listitem__tablink.length; i++) {
-        listitem__tablink[i].className = listitem__tablink[i].className.replace(" active", "");
+
+    console.log(evt);
+    if ((name == "listitem__tablink active" && text == evt.currentTarget.innerText) || (evt.currentTarget.className == "listitem__tablink active" && evt.currentTarget.innerText == "TAB 1")) {
+        name.replace(" active", "");
+        id.style.display = "none";
+        for (i = 0; i < tabcontent.length; ++i) {
+            tabcontent[i].style.display = "none";
+        }
+        for (i = 0; i < tablinks.length; ++i) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        name = "";
+        text = "";
+    } else {
+        for (i = 0; i < tabcontent.length; ++i) {
+            tabcontent[i].style.display = "none";
+        }
+        id.style.display = "block";
+        for (i = 0; i < tablinks.length; ++i) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        evt.currentTarget.className += " active";
+        name = evt.currentTarget.className;
+        text = evt.currentTarget.innerText;
+        // console.log(name, text);
     }
-    document.getElementById(tab_id).style.display = "block";
-    evt.currentTarget.className += " active";
 }
+
+$(function() {
+
+    var $window           = $(window),
+        win_height_padded = $window.height() * 1.1,
+        isTouch           = Modernizr.touch;
+
+    if (isTouch) { $('.revealOnScroll').addClass('animated'); }
+
+    $window.on('scroll', revealOnScroll);
+
+    function revealOnScroll() {
+        var scrolled = $window.scrollTop(),
+            win_height_padded = $window.height() * 1.1;
+
+        // Showed...
+        $(".revealOnScroll:not(.animated)").each(function () {
+            var $this     = $(this),
+                offsetTop = $this.offset().top;
+
+            if (scrolled + win_height_padded > offsetTop) {
+                if ($this.data('timeout')) {
+                    window.setTimeout(function(){
+                        $this.addClass('animated ' + $this.data('animation'));
+                    }, parseInt($this.data('timeout'),10));
+                } else {
+                    $this.addClass('animated ' + $this.data('animation'));
+                }
+            }
+        });
+        // Hidden...
+        $(".revealOnScroll.animated").each(function (index) {
+            var $this     = $(this),
+                offsetTop = $this.offset().top;
+            if (scrolled + win_height_padded < offsetTop) {
+                $(this).removeClass('animated fadeInUp flipInX lightSpeedIn')
+            }
+        });
+    }
+
+    revealOnScroll();
+});

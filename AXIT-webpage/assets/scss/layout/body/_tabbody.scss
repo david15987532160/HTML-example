@@ -1,3 +1,23 @@
+@keyframes slideInLeft {
+  0% { opacity: 0; transform: translate3d(-100%, 0, 0); }
+  //25% { opacity: 0; transform: translate3d(100%, 0, 0); }
+  //50% { opacity: 0.5; transform: translate3d(50%, 0, 0); }
+  100% { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+@keyframes slideInRight {
+  0% { opacity: 0; transform: translate3d(100%, 0, 0); }
+  //25% { opacity: 0; transform: translate3d(100%, 0, 0); }
+  //50% { opacity: 0.5; transform: translate3d(50%, 0, 0); }
+  100% { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  25% { opacity: 0; }
+  50% { opacity: 0; }
+  75% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 .tab-container {
   width: 100%;
   background: #f5f5f5;
@@ -10,27 +30,28 @@
   padding-top: 148px;
   padding-bottom: 120px;
   .tab__select {
+    animation: slideInLeft 1s linear;
     .tab__list {
       display: flex;
       flex-direction: column;
-      cursor: pointer;
-      div {
-        background: #333333;
-        color: white;
-        border: 0.5px solid white;
-        font-size: 20px;
-        text-align: center;
+      .listitem__tablink {
         padding-top: 46px;
         padding-bottom: 46px;
         padding-left: 35px;
         padding-right: 35px;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        background: #333333;
+        border: 0.5px solid white;
+        cursor: pointer;
+        transition: 0.5s;
       }
-      div:hover {
+      .listitem__tablink:hover {
+        background: #ffa35e;
+      }
+      .listitem__tablink.active {
         background: #ff8b38;
-      }
-      div:active {
-        background: #FFAB6A;
-        //outline: none;
       }
     }
   }
@@ -45,7 +66,8 @@
       font-size: 26px;
     }
     #tab__1 {
-
+      display: none;
+      color: green;
     }
     #tab__2 {
       display: none;
@@ -81,9 +103,11 @@
         transform: translateY(0.3px);
       }
     }
+    animation: fadeIn 2s linear;
   }
 
   .tab__img {
+    animation: slideInRight 1s linear;
     img {
       padding-top: 25px;
     }

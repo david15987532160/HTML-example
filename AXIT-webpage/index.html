@@ -18,9 +18,11 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400, 600, 700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400, 600, 700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/aos/aos.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
     <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/aos/aos.js"></script>
     <script src="assets/js/main.js"></script>
 </head>
 <body>
@@ -118,18 +120,18 @@
             <div class="tab">
                 <div class="tab__select">
                     <ul class="tab__select tab__list">
-                        <div class="listitem__tablink" onclick="openTab()"><strong>TAB 1</strong></div>
-                        <div class="listitem__tablink" onclick="openTab()"><strong>TAB 2</strong></div>
-                        <div class="listitem__tablink" onclick="openTab()"><strong>TAB 3</strong></div>
+                        <div class="listitem__tablink active" onclick="openTab(event, 'tab__1')"><strong>TAB 1</strong></div>
+                        <div class="listitem__tablink" onclick="openTab(event, 'tab__2')"><strong>TAB 2</strong></div>
+                        <div class="listitem__tablink" onclick="openTab(event, 'tab__3')"><strong>TAB 3</strong></div>
                     </ul>
 
                 </div>
 
                 <div class="tab__text">
                     <p class="title"><strong>Tabs with soft transitioning effect.</strong></p>
-                    <p id="tab__1" class="text__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.<br/> <br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
-                    <p id="tab__2" class="text__content">2</p>
-                    <p id="tab__3" class="text__content">3</p>
+                    <p id="tab__1" class="text__content" style="display:block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.<br/> <br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                    <p id="tab__2" class="text__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.<br/> <br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                    <p id="tab__3" class="text__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.<br/> <br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
                     <div class="btn-download">
                         <a href="#Download"> <strong>Download</strong></a>
                     </div>
