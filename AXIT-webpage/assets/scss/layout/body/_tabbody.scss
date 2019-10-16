@@ -13,6 +13,7 @@
     .tab__list {
       display: flex;
       flex-direction: column;
+      cursor: pointer;
       div {
         background: #333333;
         color: white;
@@ -43,11 +44,22 @@
     strong {
       font-size: 26px;
     }
+    #tab__1 {
+
+    }
+    #tab__2 {
+      display: none;
+      color: red;
+    }
+    #tab__3 {
+      display: none;
+      color: blue;
+    }
     p {
       padding-bottom: 53px;
       opacity: 0.7;
     }
-    .btn-download-2 {
+    .btn-download {
       width: 120px;
       background: #ff8b38;
       text-align: center;
@@ -63,7 +75,7 @@
       }
       a:hover {
         background: #FFAB6A;
-        //border-radius: 0px 0px 5px 5px;
+        border-radius: 3px;
       }
       a:active {
         transform: translateY(0.3px);

@@ -111,24 +111,27 @@
         </div>
     </div>
 
+
 <!--    Body TAB-->
     <div class="tab-container">
         <div class="wrapper">
             <div class="tab">
                 <div class="tab__select">
                     <ul class="tab__select tab__list">
-                        <div onclick="openTab()"><strong>TAB 1</strong></div>
-                        <div onclick="openTab()"><strong>TAB 2</strong></div>
-                        <div onclick="openTab()"><strong>TAB 3</strong></div>
+                        <div class="listitem__tablink" onclick="openTab()"><strong>TAB 1</strong></div>
+                        <div class="listitem__tablink" onclick="openTab()"><strong>TAB 2</strong></div>
+                        <div class="listitem__tablink" onclick="openTab()"><strong>TAB 3</strong></div>
                     </ul>
 
                 </div>
 
                 <div class="tab__text">
                     <p class="title"><strong>Tabs with soft transitioning effect.</strong></p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.<br/> <br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
-                    <div class="btn-download-2">
-                        <a class="btn-download-2" href="#Download"> <strong>Download</strong></a>
+                    <p id="tab__1" class="text__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.<br/> <br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                    <p id="tab__2" class="text__content">2</p>
+                    <p id="tab__3" class="text__content">3</p>
+                    <div class="btn-download">
+                        <a href="#Download"> <strong>Download</strong></a>
                     </div>
                 </div>
 
@@ -270,7 +273,7 @@
                                     <p>1 GB OF SPACE</p>
                                     <p>10 GB OF BANDWIDTH</p>
                                     <p>3 WEBSITES</p>
-                                    <p>BASIC CUSTOIZATION</p>
+                                    <p>BASIC CUSTOMIZATION</p>
                                     <p>WORDPRESS INTEGRATION</p>
                                     <p>EMAIL SUPPORT</p>
                                 </ul>
@@ -291,7 +294,7 @@
                                     <p>5 GB OF SPACE</p>
                                     <p>50 GB OF BANDWIDTH</p>
                                     <p>12 WEBSITES</p>
-                                    <p>ADVANCED CUSTOIZATION</p>
+                                    <p>ADVANCED CUSTOMIZATION</p>
                                     <p>WORDPRESS INTEGRATION</p>
                                     <p>EMAIL SUPPORT</p>
                                 </ul>
@@ -309,7 +312,7 @@
                                     <p>UNLIMITED SPACE</p>
                                     <p>UNLIMITED BANDWIDTH</p>
                                     <p>100 WEBSITES</p>
-                                    <p>ADVANCED CUSTOIZATION</p>
+                                    <p>ADVANCED CUSTOMIZATION</p>
                                     <p>WORDPRESS INTEGRATION</p>
                                     <p>24/7 CUSTOMER SUPPORT</p>
                                 </ul>
@@ -407,20 +410,57 @@
                 <form class="contact__input">
                     <div class="input__info">
                         <ul class="input__list">
-                            <input placeholder="Name">
-                            <input placeholder="Email">
-                            <input placeholder="Subject">
+                            <input id="i__1" placeholder="Name">
+                            <input id="i__2" placeholder="Email">
+                            <input id="i__3" placeholder="Subject">
                         </ul>
                         <div class="input__message">
-                            <textarea placeholder="Message">
-
-                            </textarea>
+                            <textarea placeholder="Message"></textarea>
                         </div>
                     </div>
                 </form>
 
                 <div class="btn-download">
                     <a href="#Message" title="">Send Message</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+<!--    Footer-->
+    <div class="footer-container">
+        <div class="wrapper">
+            <div class="footer">
+                <div class="footer__icon">
+                    <ul>
+                        <a href="#Facebook" title="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#Twitter" title="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#GooglePlus" title="">
+                            <i class="fab fa-google-plus"></i>
+                        </a>
+                        <a href="#Pinterest" title="">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                        <a href="#Instagram" title="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#Stumbleupon" title="">
+                            <i class="fab fa-stumbleupon"></i>
+                        </a>
+                        <a href="#Wifi" title="">
+                            <i class="fas fa-rss"></i>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="footer__text">
+                    <p>© 2015 Axure Themes</p>
                 </div>
             </div>
         </div>
