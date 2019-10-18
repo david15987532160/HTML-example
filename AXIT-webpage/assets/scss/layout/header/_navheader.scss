@@ -1,3 +1,34 @@
+@keyframes fadeIn {
+  0% {
+    transform: translateY(-100%);
+  }
+  50%{
+    transform: translateY(8%);
+  }
+  65%{
+    transform: translateY(-4%);
+  }
+  80%{
+    transform: translateY(4%);
+  }
+  95%{
+    transform: translateY(-2%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes slideInTop {
+  from { opacity: 0; position: absolute; top: 0; }
+  to { opacity: 1; position: absolute; top: 0; }
+}
+
+@keyframes slideDown {
+  0% { top: -100px; }
+  100% { top: 68px; }
+}
+
 // Header Navigation Bar
 .nav-container {
   width: 100%;
@@ -9,8 +40,9 @@
 .nav__head {
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
   .logo-small {
-    padding-top: 20px;
+    padding-top: 21px;
     padding-bottom: 20px;
   }
 
@@ -20,10 +52,7 @@
     a {
       float: left;
       display: block;
-      padding-top: 23px;
-      padding-bottom: 23px;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding: 23px 20px;
       color: white;
       font-size: 14px;
       text-align: center;
@@ -37,21 +66,21 @@
       color: #c6c6c6;
     }
   }
+
   .nav__head__icon {
     display: none;
   }
 }
 
 // Responsive
-@media screen and (max-width: 1110px) {
+@media (max-width: 1110px) {
   .menu__nav__head {
       display: none;
   }
   .nav__head {
     .nav__head__icon {
-      float: right;
       display: block;
-      padding: 23px;
+      padding: 22px 27px;
       color: white;
     }
     .nav__head__icon:hover {
@@ -63,22 +92,41 @@
   }
 }
 
-@media screen and (max-width: 1110px) {
+@media (max-width: 1110px) {
   .menu__nav__head.responsive {
-    position: relative;
-  }
-  .menu__nav__head.responsive {
-    .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-  }
-  .menu__nav__head.responsive {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 68px;
+    right: 0;
+    //a:first-child {
+    //  border-top: 1px solid #d7d7d7;
+    //}
     a {
-      float: none;
       display: block;
-      text-align: left;
+      padding: 15px 20px;
+      font-size: 10px;
+      text-align: center;
+      background: #333333;
+      border-bottom: 1px solid #717171;
+      //animation: slideDown 2s ease;
+    }
+    a:hover {
+      background: #111111;
+    }
+
+    a:active {
+      color: #c6c6c6;
     }
   }
+  .nav__head__icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media info-phone-6 {
+
 }

@@ -34,10 +34,13 @@ function openTab(evt, tab_id) {
 
 function responsive() {
     var x = document.getElementById("menu__nav__head");
+    // console.log(x.className);
     if (x.className === "menu__nav__head") {
         x.className += " responsive";
+        // console.log(x.className);
     } else {
         x.className = "menu__nav__head";
+        // console.log(x.className);
     }
 }
 
