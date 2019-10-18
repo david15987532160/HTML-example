@@ -16,20 +16,19 @@
   //50% { opacity: 0.5; transform: translate3d(50%, 0, 0); }
   100% { opacity: 1; transform: translate3d(0, 0, 0); }
 }
-@keyframes moving {
-  from {  }
-  to { transform: translateX(1%) }
+@keyframes slide {
+  from { background-position: 0 0; }
+  to { background-position: -400px 0; }
 }
 
 // Introduction
 .intro-container {
   width: 100%;
-  //animation: moving 2s linear infinite reverse;
   background-image: url('../img/img-header-wallpaper.jpg');
   background-attachment: fixed;
   background-size: cover;
-  background-repeat: no-repeat;
-  //transform: translateX(1%);
+  //background-repeat: no-repeat;
+  animation: slide 20s linear infinite;
 }
 .intro__header {
   font-family: 'Open Sans', sans-serif;
