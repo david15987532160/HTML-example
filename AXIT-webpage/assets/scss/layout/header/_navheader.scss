@@ -94,9 +94,6 @@
     right: 0;
     top: 0;
   }
-}
-
-@media (max-width: 1110px) {
   .menu__nav__head.responsive {
     width: 100%;
     display: flex;
@@ -120,7 +117,6 @@
       color: #c6c6c6;
     }
   }
-
 }
 
 @media (max-width: 320px) {
