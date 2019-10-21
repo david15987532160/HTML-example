@@ -40,7 +40,7 @@
                     <a href="#Contact" title=""> <strong>Contact</strong></a>
                 </div>
 
-                <a href="javascript:void(0);" class="nav__head__icon" onclick="responsive()">
+                <a href="javascript:void(0);" class="nav__head__icon" onclick="toggleNav()">
                     <i class="fas fa-bars"></i>
                 </a>
             </div>
@@ -63,19 +63,22 @@
                     </div>
                 </div>
 
-                <div class="form">
+                <div id="form" class="form">
                     <div class="form__header">
                         <strong>Try Your <span>FREE</span> Trial Today</strong>
+                        <span class="btn-close" onclick="toggleForm()">&times;</span>
                     </div>
                     <form class="form__input">
-                        <input type="text" placeholder="Name">
-                        <input type="email" placeholder="Email">
-                        <input type="password" placeholder="Password">
+                        <input type="text" placeholder="Name" name="name" required>
+                        <input type="email" placeholder="Email" name="email" required>
+                        <input type="password" placeholder="Password" name="psw" required>
                     </form>
                     <div class="form__btn">
                         <a href="#GetStarted" title=""> <strong>Get Started</strong></a>
                     </div>
                 </div>
+
+                <span class="link"><em><a href="javascript:void(0)" onclick="toggleForm()">Start your free trial?</a></em></span>
             </div>
         </div>
     </div>
@@ -89,8 +92,11 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
                 </div>
 
-                <div class="icon__container">
-                    <ul class="icon__list">
+                <div id="icon__container" class="icon__container">
+                    <ul id="icon__list" class="icon__list">
+<!--                        <a href="#Add" title="" onclick="toggleIcon()">-->
+<!--                            <i class="fa fa-plus-circle"></i>-->
+<!--                        </a>-->
                         <a href="#Facebook" title="">
                             <i class="fab fa-facebook-f"></i>
                         </a>
@@ -109,7 +115,7 @@
                         <a href="#Stumbleupon" title="">
                             <i class="fab fa-stumbleupon"></i>
                         </a>
-                        <a href="#Wifi" title="">
+                        <a href="#RSS" title="">
                             <i class="fas fa-rss"></i>
                         </a>
                     </ul>
@@ -460,7 +466,7 @@
                         <a href="#Stumbleupon" title="">
                             <i class="fab fa-stumbleupon"></i>
                         </a>
-                        <a href="#Wifi" title="">
+                        <a href="#RSS" title="">
                             <i class="fas fa-rss"></i>
                         </a>
                     </ul>

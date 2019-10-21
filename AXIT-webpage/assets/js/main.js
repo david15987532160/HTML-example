@@ -32,7 +32,7 @@ function openTab(evt, tab_id) {
     }
 }
 
-function responsive() {
+function toggleNav() {
     var x = document.getElementById("menu__nav__head");
     // console.log(x.className);
     if (x.className === "menu__nav__head") {
@@ -41,6 +41,26 @@ function responsive() {
     } else {
         x.className = "menu__nav__head";
         // console.log(x.className);
+    }
+}
+
+function toggleForm() {
+    var x = document.getElementById("form");
+    // console.log(x);
+    if (x.className === "form") {
+        x.className += " responsive";
+    } else {
+        x.className = "form";
+    }
+}
+
+function toggleIcon() {
+    var x = document.getElementById("icon__container");
+    console.log(x);
+    if (x.className === "icon__container") {
+        x.className += " responsive";
+    } else {
+        x.className = "icon__container";
     }
 }
 

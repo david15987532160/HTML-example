@@ -11,8 +11,8 @@
   padding-top: 25px;
   padding-bottom: 25px;
   .text__brand {
+    width: 40%;
     display: block;
-    width: 445px;
     .title {
       opacity: 1;
     }
@@ -24,31 +24,40 @@
 
   // Icon list
   .icon__container {
-    display: flex;
-    overflow: auto;
-  }
-  .icon__list {
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-    padding-top: 14px;
-    a {
-      align-self: center;
-      cursor: default;
-      i {
-        //height: 45px;
-        //width: 45px;
-        padding-top: 5px;
-        margin-left: 29px;
-        margin-right: 29px;
-        text-align: center;
-        font-size: 39px;
-        color: #cccccc;
+    width: 60%;
+    .icon__list {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      overflow: hidden;
+      a:first-child {
+        display: none;
       }
-      i:hover {
-        color: black;
-        cursor: pointer;
+      a {
+        align-self: center;
+        cursor: default;
+        i {
+          padding-top: 5px;
+          text-align: center;
+          font-size: 39px;
+          color: #cccccc;
+        }
+        i:hover {
+          color: black;
+          cursor: pointer;
+        }
       }
     }
+  }
+}
+
+// Responsive
+@media (max-width : 517px) {
+  .icon__list {
+    display: flex;
+    flex-direction: column;
+    //a:not(:first-child) {
+    //  display: none;
+    //}
   }
 }

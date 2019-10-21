@@ -31,7 +31,7 @@
 .nav-container {
   width: 100%;
   background: #333333;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 2;
 }
@@ -72,7 +72,7 @@
 }
 
 // Responsive
-@media (max-width: 1110px) {
+@media (max-width: 1109px) {
   .menu__nav__head {
       display: none;
   }
