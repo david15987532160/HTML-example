@@ -15,9 +15,7 @@
     .divider {
       width: 67px;
       height: 3px;
-      margin-top: 27px;
-      margin-bottom: 30px;
-      margin-left: 520px;
+      margin: 30px auto;
       background: #ff8b38;
     }
     p {
@@ -27,20 +25,16 @@
 
   .feedback__comment {
     font-family: 'Open Sans', 'sans-serif';
+    display: flex;
+    justify-content: space-between;
     padding-top: 50px;
-    .feedback__list {
-      display: flex;
-      justify-content: space-between;
-      .list__listitem {
+    .list__listitem {
+      width: 26%;
         .listitem__comment {
-          width: 275px;
           background-image: url("../img/img-cmt-box.png");
           background-size: cover;
           p {
-            padding-top: 26px;
-            padding-bottom: 50px;
-            padding-left: 12px;
-            padding-right: 20px;
+            padding: 26px 20px 50px 12px;
             font-size: 13px;
             opacity: 0.7;
           }
@@ -60,6 +54,32 @@
             }
           }
         }
+      }
+  }
+}
+
+// Responsive
+@media #{$info-ipad} {
+  .feedback {
+    .feedback__comment {
+      flex-direction: column;
+      .list__listitem {
+        width: 60%;
+        margin: auto;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media #{$info-phone-4} {
+  .feedback {
+    .feedback__comment {
+      //flex-direction: column;
+      .list__listitem {
+        width: 90%;
+        margin: auto;
+        padding-bottom: 20px;
       }
     }
   }

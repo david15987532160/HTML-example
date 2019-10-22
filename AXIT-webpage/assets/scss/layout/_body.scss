@@ -6,3 +6,23 @@
 @import "body/feedback";
 @import "body/download";
 @import "body/contact";
+
+// Scroll Top Button
+.float {
+  display: none;
+  position:fixed;
+  width:50px;
+  height:50px;
+  bottom:40px;
+  right:40px;
+  padding-top: 12px;
+  background-color:#0C9;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  box-shadow: 2px 2px 3px #999;
+}
+.float:hover, .float:active {
+  background-color: #00b58d;
+  color: white;
+}

@@ -54,16 +54,21 @@ function toggleForm() {
     }
 }
 
-function toggleIcon() {
-    var x = document.getElementById("icon__container");
-    console.log(x);
-    if (x.className === "icon__container") {
-        x.className += " responsive";
+window.onscroll = function() {hide_btn_Top()};
+
+function hide_btn_Top() {
+    var btn_scroll = document.getElementsByClassName("float")[0];
+    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+        btn_scroll.style.display = "block";
     } else {
-        x.className = "icon__container";
+        btn_scroll.style.display = "none";
     }
 }
 
+function scroll_Top() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 // $(function() {
 //
 //     var $window           = $(window),

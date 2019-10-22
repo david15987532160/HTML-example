@@ -16,12 +16,12 @@
 .spic {
   font-family: 'Open Sans', 'sans-serif';
   display: flex;
+  justify-content: space-between;
   padding-top: 90px;
   padding-bottom: 130px;
   .spic__text {
-    float: left;
     width: 50%;
-    margin-right: 102px;
+    //margin-right: 102px;
     .title {
       opacity: 1;
     }
@@ -39,16 +39,31 @@
   }
   
   .spic__pic {
+    width: 40%;
     box-shadow: 0 33px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     animation: slideInRight 2.5s ease;
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
 // Responsive
-@media (max-width: 1109px) {
-
+@media (max-width: 999px) {
+  .spic {
+    flex-direction: column;
+    .spic__text {
+      width: 100%;
+      padding-bottom: 25px;
+    }
+    .spic__pic {
+      width: 75%;
+      margin: auto;
+    }
+  }
 }
 
-@media #{$info-phone-4} {
-
-}
+//@media #{$info-phone-4} {
+//
+//}
