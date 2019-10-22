@@ -18,17 +18,16 @@
   padding-top: 105px;
   padding-bottom: 135px;
   .list__pic {
+    width: 40%;
     float: left;
     margin-top: 20px;
     margin-right: 150px;
     //box-shadow: 0 33px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    img {
-
-    }
     animation: slideInLeft 1.5s ease-out;
   }
 
   .list__text {
+    width: 45%;
     display: flex;
     flex-direction: column;
     .title {
@@ -73,10 +72,18 @@
 }
 
 // Responsive
-@media (max-width: 1109px) {
-
+@media (max-width: 999px) {
+  .list {
+    .list__pic {
+      width: 100%;
+      margin: auto;
+    }
+    .list__text {
+      width: 100%;
+    }
+  }
 }
 
-@media #{$info-phone-4} {
-
-}
+//@media #{$info-phone-4} {
+//
+//}

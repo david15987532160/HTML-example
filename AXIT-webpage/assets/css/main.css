@@ -7608,6 +7608,7 @@ img {
 @media (max-width: 1109px) {
   .wrapper {
     width: 100%;
+    padding: 0 5px;
   }
 
   .intro__header {
@@ -7979,12 +7980,14 @@ img {
   padding-bottom: 135px;
 }
 .list .list__pic {
+  width: 40%;
   float: left;
   margin-top: 20px;
   margin-right: 150px;
   animation: slideInLeft 1.5s ease-out;
 }
 .list .list__text {
+  width: 45%;
   display: flex;
   flex-direction: column;
   animation: slideInRight 1.5s ease-out;
@@ -8023,6 +8026,15 @@ img {
   flex-direction: column;
 }
 
+@media (max-width: 999px) {
+  .list .list__pic {
+    width: 100%;
+    margin: auto;
+  }
+  .list .list__text {
+    width: 100%;
+  }
+}
 @keyframes slideInLeft {
   from {
     opacity: 0;
