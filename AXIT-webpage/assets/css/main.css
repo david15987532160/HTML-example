@@ -7834,17 +7834,18 @@ img {
   padding-bottom: 120px;
 }
 .tab .tab__select {
+  width: 12%;
   animation: slideInLeft 1s linear;
 }
 .tab .tab__select .tab__list {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
 .tab .tab__select .tab__list .listitem__tablink {
-  padding-top: 46px;
-  padding-bottom: 46px;
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-top: 45px;
+  padding-bottom: 45px;
   font-size: 20px;
   color: white;
   text-align: center;
@@ -7860,8 +7861,8 @@ img {
   background: #ff8b38;
 }
 .tab .tab__text {
+  width: 50%;
   display: block;
-  width: 550px;
   animation: fadeIn 2s linear;
 }
 .tab .tab__text .title {
@@ -7909,12 +7910,45 @@ img {
   transform: translateY(0.3px);
 }
 .tab .tab__img {
+  width: 29%;
+  padding-top: 25px;
   animation: slideInRight 1s linear;
 }
 .tab .tab__img img {
-  padding-top: 25px;
+  width: 100%;
 }
 
+@media (max-width: 1009px) {
+  .tab {
+    flex-direction: column;
+  }
+  .tab .tab__select {
+    width: 100%;
+  }
+  .tab .tab__select .tab__list {
+    width: 100%;
+    flex-direction: row;
+  }
+  .tab .tab__select .tab__list .listitem__tablink {
+    width: 33.33%;
+    padding: 20px 0;
+  }
+  .tab .tab__text {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+  }
+  .tab .tab__text p {
+    padding-bottom: 20px;
+  }
+  .tab .tab__text .btn-download {
+    margin: auto;
+  }
+  .tab .tab__img {
+    margin: auto;
+    width: 75%;
+  }
+}
 @keyframes slideInLeft {
   from {
     opacity: 0;
