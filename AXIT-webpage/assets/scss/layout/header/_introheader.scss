@@ -193,7 +193,7 @@
   }
 }
 
-@media (max-width: 356px) {
+@media #{$info-phone-4} {
   .intro__header {
     .form {
       display: none;

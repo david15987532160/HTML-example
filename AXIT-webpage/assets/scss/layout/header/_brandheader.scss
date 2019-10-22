@@ -1,3 +1,10 @@
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  25% { opacity: 0; }
+  50% { opacity: 0; }
+  75% { opacity: 0; }
+  100% { opacity: 1; }
+}
 // Social Media Link
 .brand-container {
   width: 100%;
@@ -25,16 +32,14 @@
   // Icon list
   .icon__container {
     width: 60%;
-    .icon__list {
-      height: 100%;
-      display: flex;
-      justify-content: space-between;
-      overflow: hidden;
-      a:first-child {
-        display: none;
-      }
-      a {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    justify-content: space-between;
+    overflow: hidden;
+      div {
+        margin: 5px 2px;
         align-self: center;
+        text-align: center;
         cursor: default;
         i {
           padding-top: 5px;
@@ -47,17 +52,29 @@
           cursor: pointer;
         }
       }
-    }
   }
 }
 
 // Responsive
-@media (max-width : 517px) {
-  .icon__list {
-    display: flex;
-    flex-direction: column;
-    //a:not(:first-child) {
-    //  display: none;
-    //}
+//@media (max-width : 576px) {
+//  #icon__container {
+//    display: grid;
+//    justify-content: space-evenly;
+//    grid-template-columns: auto auto auto;
+//    animation: fadeIn 0.2s ease;
+//    .icon7 {
+//      grid-column: 1 / span 3;
+//    }
+//  }
+//}
+@media #{$info-phone-6} {
+  #icon__container {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: auto auto auto;
+    animation: fadeIn 0.2s ease;
+    .icon7 {
+      grid-column: 1 / span 3;
+    }
   }
 }

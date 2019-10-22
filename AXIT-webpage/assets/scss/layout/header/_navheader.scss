@@ -119,7 +119,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media #{$info-phone-4} {
   .menu__nav__head.responsive {
     display: flex;
     flex-direction: column;
