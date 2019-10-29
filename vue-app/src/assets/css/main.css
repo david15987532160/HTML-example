@@ -5330,19 +5330,31 @@ img {
   max-width: 100%; }
 
 #app {
+  width: 100%;
+  padding: 100px 0;
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px; }
+  background-image: url("../img/img-header-wallpaper.jpg");
+  background-attachment: fixed;
+  background-size: cover; }
 
 .hello {
-  color: blue; }
+  color: white; }
   .hello h1 {
-    color: red; }
+    color: white; }
   .hello span {
-    color: green; }
+    color: #42b983; }
+
+#body {
+  padding: 50px 0; }
+  #body ::placeholder {
+    color: #d8d8d8; }
+
+#footer a {
+  color: blue; }
 
 #footer {
   text-align: center; }

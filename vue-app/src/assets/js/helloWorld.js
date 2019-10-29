@@ -7,7 +7,8 @@ export default {
       return {
         name: "David",
         age: 23,
-        mail: "abc@gmail.com"
+        mail: "abc@gmail.com",
+        link: 'http://facebook.com/quocanh.phamnguyen',
       };
     },
     computed: {
