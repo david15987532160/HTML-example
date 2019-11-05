@@ -1,13 +1,16 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {Routes, RouterModule} from '@angular/router';
+import {NzPaginationModule} from 'ng-zorro-antd/pagination';
 
-const routes: Routes = [{ }];
+const routes: Routes = [{}];
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
+    declarations: [],
+    imports: [
+        CommonModule,
+        NzPaginationModule,
+    ]
 })
-export class HistoryModule { }
+export class HistoryModule {
+}

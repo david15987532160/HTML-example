@@ -11,9 +11,11 @@ export class HistoryComponent implements OnInit {
     title = 'Image list';
     image: Image = {
         id: 1,
-        name: 'Star Wars',
+        name: 'ABC',
         date: '1977',
-    }
+        src: './',
+    };
+
     // images = fakeImages;
     images: Image[];
     selectedImage: Image;
@@ -31,10 +33,8 @@ export class HistoryComponent implements OnInit {
     }
 
     // Action when select an Image in List item
-
     onSelect(image: Image): void {
         this.selectedImage = image;
         console.log(`selectedImage = ${JSON.stringify(this.selectedImage)}`);
     }
-
 }

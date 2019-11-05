@@ -1,11 +1,12 @@
-import {BrowserModule} from '@angular/platform-browser';
 import {NgModule, OnDestroy} from '@angular/core';
-
+import {BrowserModule} from '@angular/platform-browser';
 import {AppRoutingModule} from './app-routing.module';
+import {Subject} from 'rxjs';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import {NgZorroAntdModule} from 'ng-zorro-antd';
 import {AppComponent} from './app.component';
 import {HistoryComponent} from './history/history.component';
 import {HistoryModule} from './history/history.module';
-import {Subject} from 'rxjs';
 
 // import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
@@ -17,8 +18,9 @@ import {Subject} from 'rxjs';
     imports: [
         BrowserModule,
         AppRoutingModule,
+        FontAwesomeModule,
         HistoryModule,
-        // NgbModule,
+        NgZorroAntdModule,
     ],
     providers: [],
     bootstrap: [AppComponent]
