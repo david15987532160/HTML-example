@@ -111,7 +111,7 @@
     "@angular-devkit/core" "8.3.17"
     rxjs "6.4.0"
 
-"@angular/animations@~8.2.12":
+"@angular/animations@^8.2.13":
   version "8.2.13"
   resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-8.2.13.tgz#0fdcf9bdcc0b310bff09a024557f0f935ae9b5dc"
   integrity sha512-ZE4UZsQ6HDW1ZIj9tL45PVosCcG4Ke7ihV7eWCE1VgLZKDDxTOPbLf1UeEiszUYptMLGH3eGMNBKo85mOlkH8w==
@@ -7914,6 +7914,11 @@ preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
   integrity sha1-gV7R9uvGWSb4ZbMQwHE7yzMVzks=
+
+primeng@^8.1.1:
+  version "8.1.1"
+  resolved "https://registry.yarnpkg.com/primeng/-/primeng-8.1.1.tgz#3b1f95f503f1bd70834caea775dbfd2e4e322b5c"
+  integrity sha512-8dP8A3qkmOvDTe97kCeFvoCk6oPNDdgMTdT4UBzhC4ua5wM7i7pjYXuKzAXm3oEFf+iSEB6WqzzfSqyZdbEA+w==
 
 private@^0.1.6:
   version "0.1.8"

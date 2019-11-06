@@ -3,13 +3,19 @@ import {CommonModule} from '@angular/common';
 import {Routes, RouterModule} from '@angular/router';
 import {NzPaginationModule} from 'ng-zorro-antd/pagination';
 
-const routes: Routes = [{}];
+import {HistoryComponent} from './history.component';
+
+const routes: Routes = [{
+    path: '',
+    component: HistoryComponent
+}];
 
 @NgModule({
-    declarations: [],
+    declarations: [HistoryComponent],
     imports: [
         CommonModule,
         NzPaginationModule,
+        RouterModule.forChild(routes)
     ]
 })
 export class HistoryModule {

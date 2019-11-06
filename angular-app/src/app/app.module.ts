@@ -1,25 +1,27 @@
 import {NgModule, OnDestroy} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {AppRoutingModule} from './app-routing.module';
 import {Subject} from 'rxjs';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {NgZorroAntdModule} from 'ng-zorro-antd';
 import {AppComponent} from './app.component';
-import {HistoryComponent} from './history/history.component';
-import {HistoryModule} from './history/history.module';
+import { HistoryV2Component } from './modules/history-v2/history-v2.component';
 
-// import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+// import {HistoryModule} from './history/history.module';
+
 
 @NgModule({
     declarations: [
         AppComponent,
-        HistoryComponent,
+        HistoryV2Component
     ],
     imports: [
         BrowserModule,
+        BrowserAnimationsModule,
         AppRoutingModule,
         FontAwesomeModule,
-        HistoryModule,
+        // HistoryModule,
         NgZorroAntdModule,
     ],
     providers: [],
