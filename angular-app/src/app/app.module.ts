@@ -6,23 +6,19 @@ import {Subject} from 'rxjs';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {NgZorroAntdModule} from 'ng-zorro-antd';
 import {AppComponent} from './app.component';
-import { HistoryV2Component } from './modules/history-v2/history-v2.component';
-
-// import {HistoryModule} from './history/history.module';
-
+import {PanelModule} from 'primeng/panel';
 
 @NgModule({
     declarations: [
         AppComponent,
-        HistoryV2Component
     ],
     imports: [
         BrowserModule,
         BrowserAnimationsModule,
         AppRoutingModule,
         FontAwesomeModule,
-        // HistoryModule,
         NgZorroAntdModule,
+        PanelModule,
     ],
     providers: [],
     bootstrap: [AppComponent]

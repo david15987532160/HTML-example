@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {Image} from '../../core/models/image';
-import {ImageService} from '../../core/services/image.service';
+import {Image} from '../../../core/models/image';
+import {ImageService} from '../../../core/services/image.service';
 
 @Component({
     selector: 'app-history',

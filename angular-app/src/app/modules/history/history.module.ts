@@ -3,7 +3,7 @@ import {CommonModule} from '@angular/common';
 import {Routes, RouterModule} from '@angular/router';
 import {NzPaginationModule} from 'ng-zorro-antd/pagination';
 
-import {HistoryComponent} from './history.component';
+import {HistoryComponent} from './pages/history.component';
 
 const routes: Routes = [{
     path: '',

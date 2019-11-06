@@ -1,23 +1,39 @@
 // Services could get data from server, create fake data, get data from local storage
 import {Injectable} from '@angular/core';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {fakeImages} from '../../fake-Images';
 import {Image} from '../models/image';
 
 // Get data asynchronous
 import {Observable, of} from 'rxjs';
+import {catchError, tap} from 'rxjs/operators';
 
 import {MessageService} from './message.service';
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
 export class ImageService {
-  getImages(): Observable<Image[]> {
-    this.messageService.add(`${new Date().toLocaleString()}. Get image list`);
-    return of(fakeImages);
-  }
 
-  constructor(public messageService: MessageService) {
-  }
+    constructor(private http: HttpClient, public messageService: MessageService) {
+    }
+
+    private urlImages = '';
+
+    getImages(): Observable<Image[]> {
+        this.messageService.add(`${new Date().toLocaleString()}. Get image list`);
+        return of(fakeImages);
+    }
+
+    getImagesReq(): Observable<Image[]> {
+        return this.http.get<Image[]>(this.urlImages).pipe(
+            tap(receivedMovies => console.log(`receivedMovies = ${JSON.stringify(receivedMovies)}`)),
+            catchError(error => of([]))
+        );
+    }
+
+    getImageFromId(id: number): Observable<Image> {
+        return of(fakeImages.find(movie => movie.id === id));
+    }
 
 }
