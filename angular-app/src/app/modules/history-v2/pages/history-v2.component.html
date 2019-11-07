@@ -1,60 +1,22 @@
 <p>history-v2 works!</p>
 
-<!--<div class="content-section introduction">-->
-<!--  <div>-->
-<!--    <span class="feature-title">DataGrid</span>-->
-<!--    <span>DataGrid is deprecated, use <a href="#" [routerLink]="['/dataview']">DataView</a> instead.</span>-->
-<!--  </div>-->
-<!--</div>-->
+<div class="container">
+  <div class="box box-danger">
 
-<!--<div class="content-section implementation">-->
-<!--  <p-dataGrid [value]="images" [paginator]="true" [rows]="20">-->
-<!--    <p-header>-->
-<!--      List of Images-->
-<!--    </p-header>-->
-<!--    <ng-template let-image pTemplate="item">-->
-<!--      <div style="padding:3px" class="ui-g-12 ui-md-3">-->
-<!--        <p-panel [header]="image.id" [style]="{'text-align':'center'}">-->
-<!--          <img src="assets/showcase/images/demo/car/{{image.name}}.png" width="60">-->
-<!--          <div class="car-detail">{{image.date}} - {{image.src}}</div>-->
-<!--          <hr class="ui-widget-content" style="border-top:0">-->
-<!--&lt;!&ndash;          <i class="pi pi-search" (click)="selectCar(car)" style="cursor:pointer"></i>&ndash;&gt;-->
-<!--        </p-panel>-->
-<!--      </div>-->
-<!--    </ng-template>-->
-<!--  </p-dataGrid>-->
+    <div class="box-body no-padding">
+      <ul class="users-list clearfix">
+        <li class="list_item"
+            *ngFor="let eachImage of images"
+            [class.selected]="eachImage === selectedImage"
+            (click)="onSelect(eachImage)">
+          <img src="{{ eachImage.src }}"> <br>
+          {{ eachImage.id  }}  -  {{eachImage.name}} - {{eachImage.date}}
+        </li>
+      </ul>
+    </div>
 
-<!--  <p-dialog header="Car Details" [(visible)]="displayDialog" [responsive]="true" showEffect="fade" [minY]="70"-->
-<!--            [modal]="true" [style]="{width: '225px'}" (onAfterHide)="onDialogHide()">-->
-<!--    <div class="ui-grid ui-grid-responsive ui-grid-pad" *ngIf="selectedImage"-->
-<!--         style="font-size:16px;text-align:center;padding:20px">-->
-<!--      <div class="ui-grid-row">-->
-<!--        <div class="ui-grid-col-12" style="text-align:center"><img src="../../../../assets/img/{{selectedImage}}.png">-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      <div class="ui-grid-row">-->
-<!--        <div class="ui-grid-col-4">Vin:</div>-->
-<!--        <div class="ui-grid-col-8">{{selectedImage.id}}</div>-->
-<!--      </div>-->
-<!--      <div class="ui-grid-row">-->
-<!--        <div class="ui-grid-col-4">Year:</div>-->
-<!--        <div class="ui-grid-col-8">{{selectedImage.name}}</div>-->
-<!--      </div>-->
-<!--      <div class="ui-grid-row">-->
-<!--        <div class="ui-grid-col-4">Brand:</div>-->
-<!--        <div class="ui-grid-col-8">{{selectedImage.date}}</div>-->
-<!--      </div>-->
-<!--      <div class="ui-grid-row">-->
-<!--        <div class="ui-grid-col-4">Color:</div>-->
-<!--        <div class="ui-grid-col-8">{{selectedImage.src}}</div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </p-dialog>-->
-<!--</div>-->
+    <nz-pagination [nzPageIndex]="1" [nzTotal]="50"></nz-pagination>
 
-<!--<div class="content-section documentation">-->
-<!--  <p-tabView effect="fade">-->
-<!--    <p-tabPanel header="Documentation">-->
-<!--      <h3>Import</h3>-->
-<!--      <pre>-->
-<!--<code class="language-typescript" pCode ngNonBindable>-->
+  </div>
+  <!--  <app-image-detail [image]="selectedImage"></app-image-detail>-->
+</div>

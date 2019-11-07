@@ -5,8 +5,8 @@ import {AppRoutingModule} from './app-routing.module';
 import {Subject} from 'rxjs';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {NgZorroAntdModule} from 'ng-zorro-antd';
+import {HttpClientModule} from '@angular/common/http';
 import {AppComponent} from './app.component';
-import {PanelModule} from 'primeng/panel';
 
 @NgModule({
     declarations: [
@@ -18,7 +18,7 @@ import {PanelModule} from 'primeng/panel';
         AppRoutingModule,
         FontAwesomeModule,
         NgZorroAntdModule,
-        PanelModule,
+        HttpClientModule,
     ],
     providers: [],
     bootstrap: [AppComponent]

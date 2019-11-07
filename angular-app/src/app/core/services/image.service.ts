@@ -18,7 +18,7 @@ export class ImageService {
     constructor(private http: HttpClient, public messageService: MessageService) {
     }
 
-    private urlImages = '';
+    private urlImages = 'http://127.0.0.1:3000/images';
 
     getImages(): Observable<Image[]> {
         this.messageService.add(`${new Date().toLocaleString()}. Get image list`);
@@ -27,13 +27,13 @@ export class ImageService {
 
     getImagesReq(): Observable<Image[]> {
         return this.http.get<Image[]>(this.urlImages).pipe(
-            tap(receivedMovies => console.log(`receivedMovies = ${JSON.stringify(receivedMovies)}`)),
+            tap(receivedImages => console.log(`receivedImages = ${JSON.stringify(receivedImages)}`)),
             catchError(error => of([]))
         );
     }
 
     getImageFromId(id: number): Observable<Image> {
-        return of(fakeImages.find(movie => movie.id === id));
+        return of(fakeImages.find(image => image.id === id));
     }
 
 }
