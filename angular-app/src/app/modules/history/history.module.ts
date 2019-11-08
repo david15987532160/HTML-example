@@ -12,6 +12,9 @@ const routes: Routes = [{
 
 @NgModule({
     declarations: [HistoryComponent],
+    exports: [
+        HistoryComponent
+    ],
     imports: [
         CommonModule,
         NzPaginationModule,

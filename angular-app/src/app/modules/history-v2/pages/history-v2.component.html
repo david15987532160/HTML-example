@@ -1,22 +1,25 @@
-<p>history-v2 works!</p>
-
 <div class="container">
   <div class="box box-danger">
 
     <div class="box-body no-padding">
-      <ul class="users-list clearfix">
-        <li class="list_item"
-            *ngFor="let eachImage of images"
-            [class.selected]="eachImage === selectedImage"
-            (click)="onSelect(eachImage)">
-          <img src="{{ eachImage.src }}"> <br>
-          {{ eachImage.id  }}  -  {{eachImage.name}} - {{eachImage.date}}
-        </li>
-      </ul>
+
+            <ul class="users-list clearfix">
+              <li class="list_item"
+                  *ngFor="let eachImage of images"
+
+                  (click)="onSelect(eachImage)">
+                <img src="{{ eachImage.src }}"> <br>
+                {{ eachImage.id  }}  -  {{eachImage.name}} - {{eachImage.date}}
+              </li>
+            </ul>
     </div>
 
-    <nz-pagination [nzPageIndex]="1" [nzTotal]="50"></nz-pagination>
+    <nz-pagination
+        [nzPageIndex]="1"
+        [nzTotal]="images.length"
+        [nzPageSize]="8">
+    </nz-pagination>
 
   </div>
-  <!--  <app-image-detail [image]="selectedImage"></app-image-detail>-->
 </div>
+<!--[class.selected]="eachImage === selectedImage"-->

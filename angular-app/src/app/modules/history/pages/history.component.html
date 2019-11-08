@@ -1,22 +1,11 @@
-<h1>{{ title }}</h1>
-<!--<div class="parent">-->
-<!--  <ul class="image_list">-->
-<!--    <li class="list_item"-->
-<!--        *ngFor="let eachImage of images"-->
-<!--        [class.selected]="eachImage === selectedImage"-->
-<!--        (click)="onSelect(eachImage)">-->
-<!--      {{eachImage.name}} - {{eachImage.date}}-->
-<!--    </li>-->
-<!--  </ul>-->
-<!--  &lt;!&ndash;  <app-image-detail [image]="selectedImage"></app-image-detail>&ndash;&gt;-->
-<!--</div>-->
+<h2>{{ title2 }}</h2>
 
 <div class="container">
   <!-- IMAGE LIST -->
   <div class="box box-danger">
     <div class="box-body no-padding">
       <ul class="users-list clearfix">
-        <li>
+        <li (click)="onSelect(selectedImage)">
           <img src="../../../../assets/img/user1-128x128.jpg" alt="User Image">
           <a class="users-list-name" href="#">Alexander Pierce</a>
           <span class="users-list-date">Today</span>
@@ -63,4 +52,21 @@
 
   <nz-pagination [nzPageIndex]="1" [nzTotal]="50"></nz-pagination>
 
+<!--  <nz-pagination-->
+<!--      [nzPageIndex]="1"-->
+<!--      [nzTotal]="images.length"-->
+<!--      [nzPageSize]="2">-->
+<!--  </nz-pagination>-->
+
+<!--  <nz-pagination-->
+<!--      [nzPageSizeOptions]="[10, 25, 50, 100]"-->
+<!--      [nzShowTotal]="rangeTemplate"-->
+<!--      [nzTotal]="8"-->
+<!--      [(nzPageIndex)]="params.pageIndex"-->
+<!--      [(nzPageSize)]="params.pageSize"-->
+<!--      nzShowQuickJumper-->
+<!--      nzShowSizeChanger></nz-pagination>-->
+<!--  <ng-template #rangeTemplate let-range="range" let-total>-->
+<!--    {{ range[0] }}-{{ range[1] }} of {{ total }} items-->
+<!--  </ng-template>-->
 </div>

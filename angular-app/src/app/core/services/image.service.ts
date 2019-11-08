@@ -25,7 +25,7 @@ export class ImageService {
         return of(fakeImages);
     }
 
-    getImagesReq(): Observable<Image[]> {
+    getImagesHttp(): Observable<Image[]> {
         return this.http.get<Image[]>(this.urlImages).pipe(
             tap(receivedImages => console.log(`receivedImages = ${JSON.stringify(receivedImages)}`)),
             catchError(error => of([]))

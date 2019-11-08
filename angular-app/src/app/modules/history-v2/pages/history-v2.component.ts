@@ -20,7 +20,7 @@ export class HistoryV2Component implements OnInit {
     }
 
     getImagesFromServices(): void {
-        this.imageService.getImagesReq().subscribe(updateImages => this.images = updateImages);
+        this.imageService.getImagesHttp().subscribe(updateImages => this.images = updateImages);
     }
 
     ngOnInit() {

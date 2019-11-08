@@ -12,6 +12,10 @@ const routes: Routes = [
         loadChildren: () => import('./modules/history-v2/history-v2.module').then(m => m.HistoryV2Module),
     },
     {
+        path: 'history3',
+        loadChildren: () => import ('./modules/history-v3/history-v3.module').then(m => m.HistoryV3Module),
+    },
+    {
         path: '',
         pathMatch: 'full',
         redirectTo: '/',
