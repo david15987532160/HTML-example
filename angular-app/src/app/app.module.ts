@@ -7,6 +7,8 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {NgZorroAntdModule} from 'ng-zorro-antd';
 import {HttpClientModule} from '@angular/common/http';
 import {AppComponent} from './app.component';
+import {DialogModule} from 'primeng/dialog';
+import {ButtonModule} from 'primeng/button';
 
 @NgModule({
     declarations: [
@@ -19,6 +21,8 @@ import {AppComponent} from './app.component';
         FontAwesomeModule,
         NgZorroAntdModule,
         HttpClientModule,
+        DialogModule,
+        ButtonModule,
     ],
     providers: [],
     bootstrap: [AppComponent]

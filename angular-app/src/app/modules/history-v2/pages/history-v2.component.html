@@ -1,8 +1,6 @@
 <div class="container">
   <div class="box box-danger">
-
     <div class="box-body no-padding">
-
             <ul class="users-list clearfix">
               <li class="list_item"
                   *ngFor="let eachImage of images"
@@ -14,11 +12,13 @@
             </ul>
     </div>
 
-    <nz-pagination
-        [nzPageIndex]="1"
-        [nzTotal]="images.length"
-        [nzPageSize]="8">
-    </nz-pagination>
+    <nz-pagination [nzPageIndex]="1" [nzPageSize]="8" [nzTotal]="40"></nz-pagination>
+
+<!--    <nz-pagination-->
+<!--        [nzPageIndex]="1"-->
+<!--        [nzTotal]="images.length"-->
+<!--        [nzPageSize]="8">-->
+<!--    </nz-pagination>-->
 
   </div>
 </div>

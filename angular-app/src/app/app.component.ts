@@ -9,6 +9,7 @@ import {MessageService} from './core/services/message.service';
 })
 export class AppComponent implements OnInit {
     title = 'API call test';
+    display = false;
 
     constructor(private messageService: MessageService) {
 
@@ -20,6 +21,10 @@ export class AppComponent implements OnInit {
 
     ngOnInit(): void {
 
+    }
+
+    showDialog() {
+        this.display = true;
     }
 
 }

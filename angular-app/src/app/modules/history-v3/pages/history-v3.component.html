@@ -1,28 +1,61 @@
-<!--<p>history-v3 works!</p>-->
-<div>
-  <ul class="pagination">
-    <li class="">
-      <a>1</a>
-    </li>
-    <li>
-      <a>2</a>
-    </li>
-    <li>
-      <a>3</a>
-    </li>
-    <li>
-      <a>4</a>
-    </li>
-    <li>
-      <a>5</a>
-    </li>
+<p-dataView [value]="images" [paginator]="true" [rows]="20" paginatorPosition="both">
 
-    <li>
-      <a>...</a>
-    </li>
-    <li>
-      <a>11</a>
-    </li>
+  <p-header>
+    <div class="ui-helper-clearfix">
+      <div class="ui-g">
+        <div class="ui-g-6 ui-md-4" style="text-align:right">
+          <p-dataViewLayoutOptions></p-dataViewLayoutOptions>
+        </div>
+      </div>
+    </div>
+  </p-header>
 
-  </ul>
-</div>
+  <ng-template let-image pTemplate="listItem">
+    <div class="ui-g-12">
+      <div class="car-details">
+        <div>
+          <img src="{{ image.src }}">
+          <div class="ui-g">
+            <div class="ui-g-12">Id: <b>{{image.id}}</b></div>
+            <div class="ui-g-12">Name: <b>{{image.name}}</b></div>
+            <div class="ui-g-12">Date: <b>{{image.date}}</b></div>
+            <!--            <div class="ui-g-12">Src: <b>{{image.src}}</b></div>-->
+          </div>
+        </div>
+        <button pButton type="button" icon="pi pi-download" (click)="onSelectImage($event, image)"></button>
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template let-image pTemplate="gridItem">
+    <div style="padding:.5em" class="ui-g-12 ui-md-3">
+      <p-panel [header]="image.id" [style]="{'text-align':'center'}">
+        <img src="{{ image.src }}" width="100">
+        <div class="car-detail">{{image.name}} - {{image.date}}</div>
+        <hr class="ui-widget-content" style="border-top:0">
+        <button pButton type="button" icon="pi pi-download" (click)="onSelectImage($event, image)"
+                style="margin-top:0"></button>
+      </p-panel>
+    </div>
+
+  </ng-template>
+
+<!--  <p-dialog header="Image Details" [(visible)]="displayDialog" [responsive]="true" showEffect="fade" [modal]="true"-->
+<!--            [style]="{width: '225px'}">-->
+<!--    <div class="ui-g" *ngIf="selectedImage">-->
+<!--      <div class="ui-g-12" style="text-align:center">-->
+<!--        <img src="{{ selectedImage.src }}">-->
+<!--      </div>-->
+<!--      <div class="ui-g-4">Id:</div>-->
+<!--      <div class="ui-g-8">{{selectedImage.id}}</div>-->
+
+<!--      <div class="ui-g-4">Name:</div>-->
+<!--      <div class="ui-g-8">{{selectedImage.name}}</div>-->
+
+<!--      <div class="ui-g-4">Date:</div>-->
+<!--      <div class="ui-g-8">{{selectedImage.date}}</div>-->
+
+<!--    </div>-->
+<!--  </p-dialog>-->
+
+</p-dataView>
