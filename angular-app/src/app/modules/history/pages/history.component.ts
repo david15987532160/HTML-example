@@ -1,4 +1,4 @@
-import {Component, Input, OnDestroy, OnInit} from '@angular/core';
+import {AfterViewInit, Component, Input, OnDestroy, OnInit} from '@angular/core';
 import {Image} from '../../../core/models/image';
 import {ImageService} from '../../../core/services/image.service';
 import {MessageService} from '../../../core/services/message.service';
@@ -9,9 +9,9 @@ import {Subscription} from 'rxjs';
     templateUrl: './history.component.html',
     styleUrls: ['./history.component.scss']
 })
-export class HistoryComponent implements OnInit, OnDestroy {
+export class HistoryComponent implements OnInit, OnDestroy, AfterViewInit {
+
     title2 = '';
-    titleReceived = false;
     image: Image = {
         id: 1,
         name: 'ABC',
@@ -23,12 +23,8 @@ export class HistoryComponent implements OnInit, OnDestroy {
     subscription: Subscription;
 
     constructor(private imageService: ImageService, private messageService: MessageService) {
-        // this.subscription = this.messageService.title$.subscribe(
-        //     title => {
-        //         this.title2 = title;
-        //         this.titleReceived = true;
-        //     });
-        this.title2 = messageService.getTitle() + ' is passed';
+
+        // this.title2 = messageService.getTitle() + ' is passed';
     }
 
     getImagesFromServices(): void {
@@ -38,6 +34,14 @@ export class HistoryComponent implements OnInit, OnDestroy {
 
     ngOnInit() {
         this.getImagesFromServices();
+    }
+
+    ngAfterViewInit(): void {
+        this.subscription = this.messageService.title$.subscribe(
+            (title: string) => {
+                // console.log(title);
+                this.title2 = title;
+            });
     }
 
     ngOnDestroy(): void {

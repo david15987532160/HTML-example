@@ -1,8 +1,21 @@
-<p-dataView [value]="images" [paginator]="true" [rows]="20" paginatorPosition="both">
+<!--show image in list or grid view-->
+<p-dataView #dv [value]="images" [sortField]="sortField" [sortOrder]="sortOrder"
+            [paginator]="true" [rows]="10" paginatorPosition="both" filterBy="name">
 
+  <!--  view options-->
   <p-header>
     <div class="ui-helper-clearfix">
       <div class="ui-g">
+        <div class="ui-g-12 ui-md-4">
+          <p-dropdown [options]="sortOptions" [(ngModel)]="sortKey" placeholder="Sort By"
+                      (onChange)="onSortChange($event)" [style]="{'min-width':'140px'}"></p-dropdown>
+        </div>
+        <div class="ui-g-6 ui-md-4 filter-container">
+          <div style="position:relative">
+            <input type="search" pInputText placeholder="Search by name" (keyup)="dv.filter($event.target.value)">
+          </div>
+        </div>
+
         <div class="ui-g-6 ui-md-4" style="text-align:right">
           <p-dataViewLayoutOptions></p-dataViewLayoutOptions>
         </div>
@@ -10,6 +23,7 @@
     </div>
   </p-header>
 
+  <!--  list view template-->
   <ng-template let-image pTemplate="listItem">
     <div class="ui-g-12">
       <div class="car-details">
@@ -27,6 +41,7 @@
     </div>
   </ng-template>
 
+  <!--  grid view template-->
   <ng-template let-image pTemplate="gridItem">
     <div style="padding:.5em" class="ui-g-12 ui-md-3">
       <p-panel [header]="image.id" [style]="{'text-align':'center'}">
@@ -40,22 +55,27 @@
 
   </ng-template>
 
-<!--  <p-dialog header="Image Details" [(visible)]="displayDialog" [responsive]="true" showEffect="fade" [modal]="true"-->
-<!--            [style]="{width: '225px'}">-->
-<!--    <div class="ui-g" *ngIf="selectedImage">-->
-<!--      <div class="ui-g-12" style="text-align:center">-->
-<!--        <img src="{{ selectedImage.src }}">-->
-<!--      </div>-->
-<!--      <div class="ui-g-4">Id:</div>-->
-<!--      <div class="ui-g-8">{{selectedImage.id}}</div>-->
-
-<!--      <div class="ui-g-4">Name:</div>-->
-<!--      <div class="ui-g-8">{{selectedImage.name}}</div>-->
-
-<!--      <div class="ui-g-4">Date:</div>-->
-<!--      <div class="ui-g-8">{{selectedImage.date}}</div>-->
-
-<!--    </div>-->
-<!--  </p-dialog>-->
-
 </p-dataView>
+
+<!--show Dialog for image detail-->
+<p-dialog header="Image Details" [(visible)]="displayDialog" [modal]="true"
+          showEffect="fade" [responsive]="true" [style]="{width: '250px'}">
+  <div class="ui-g" *ngIf="selectedImage">
+    <div class="ui-g-12" style="text-align:center">
+      <img src="{{ selectedImage.src }}">
+    </div>
+    <div class="ui-g-4">Id:</div>
+    <div class="ui-g-8">{{selectedImage.id}}</div>
+
+    <div class="ui-g-4">Name:</div>
+    <div class="ui-g-8">{{selectedImage.name}}</div>
+
+    <div class="ui-g-4">Date:</div>
+    <div class="ui-g-8">{{selectedImage.date}}</div>
+
+    <button pButton type="button" icon="pi pi-download"
+            (click)="downloadImage(selectedImage)"
+            style="margin:auto"></button>
+
+  </div>
+</p-dialog>

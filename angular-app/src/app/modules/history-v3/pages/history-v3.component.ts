@@ -2,6 +2,7 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Image} from '../../../core/models/image';
 import {ImageService} from '../../../core/services/image.service';
 import {Subscription} from 'rxjs';
+import {SelectItem} from 'primeng/api';
 
 @Component({
     selector: 'app-history-v3',
@@ -12,7 +13,11 @@ export class HistoryV3Component implements OnInit, OnDestroy {
     image: Image;
     images: Image[];
     selectedImage: Image;
-    displayDialog: boolean;
+    displayDialog = false;
+    sortOptions: SelectItem[];
+    sortKey: string;
+    sortOrder: number;
+    sortField: string;
     subscription: Subscription;
 
     constructor(private imageService: ImageService) {
@@ -31,12 +36,38 @@ export class HistoryV3Component implements OnInit, OnDestroy {
     ngOnInit() {
         // this.getImagesFromServices();
         this.getImagesFromServicesReq();
+        this.sortOptions = [
+            {label: 'Newest First', value: '!date'},
+            {label: 'Oldest First', value: 'date'},
+            {label: 'Name', value: 'name'}
+        ];
     }
 
-    onSelectImage($event: MouseEvent, image) {
+    onSortChange(event) {
+        const value = event.value;
+        // console.log(value);
+
+        if (value.indexOf('!') === 0) {
+            this.sortOrder = -1;
+            this.sortField = value.substring(1, value.length);
+            console.log(this.sortField + ' ' + this.sortOrder + ' ' + this.sortKey);
+        } else {
+            this.sortOrder = 1;
+            this.sortField = value;
+            console.log(this.sortField + ' ' + this.sortOrder + ' ' + this.sortKey);
+        }
+    }
+
+    onSelectImage(event: Event, image) {
         this.selectedImage = image;
         this.displayDialog = true;
         console.log(`selectedImage = ${JSON.stringify(this.selectedImage)}`);
+        event.preventDefault();
+    }
+
+    downloadImage(selectedImage: Image) {
+        // call download api
+        console.log(`download Image = ${JSON.stringify(this.selectedImage)}`);
     }
 
     onDialogHide() {

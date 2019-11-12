@@ -9,6 +9,7 @@ import {DataViewModule} from 'primeng/dataview';
 import {PanelModule} from 'primeng/panel';
 import {DialogModule} from 'primeng/dialog';
 import {ButtonModule} from 'primeng/button';
+import {DropdownModule} from 'primeng/dropdown';
 
 const routes: Routes = [{
     path: '',
@@ -25,6 +26,7 @@ const routes: Routes = [{
         PanelModule,
         DialogModule,
         ButtonModule,
+        DropdownModule,
     ]
 })
 export class HistoryV3Module {
